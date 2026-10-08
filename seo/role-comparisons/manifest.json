@@ -1,0 +1,13 @@
+{
+  "site": "Invoicing Specialists",
+  "status": "local_verified",
+  "launchArticle": "billing-manager-vs-invoicing-va",
+  "preference": "fractional_vs_va",
+  "topics": [
+    {
+      "slug": "billing-manager-vs-invoicing-va",
+      "title": "Billing manager vs invoicing VA",
+      "state": "local_verified"
+    }
+  ]
+}

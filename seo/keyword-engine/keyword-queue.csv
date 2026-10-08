@@ -1,0 +1,6 @@
+keyword,slug,cluster,intent,priority,source
+"billing manager vs invoicing va",billing-manager-vs-invoicing-va,"Role design",commercial,1,niche-planning
+"build an invoice source control list",invoice-source-control-list,"Invoice preparation",informational,2,niche-planning
+"design a recurring billing calendar",recurring-billing-calendar,"Billing controls",informational,3,niche-planning
+"create an invoice exception queue",invoice-exception-queue,"Billing controls",informational,4,niche-planning
+"a customer billing record review routine",customer-billing-record-review,"Customer records",informational,5,niche-planning
