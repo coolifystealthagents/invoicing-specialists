@@ -1,0 +1,119 @@
+{
+  "site": "InvoicingSpecialists",
+  "domain": "invoicingspecialists.com",
+  "canonicalOrigin": "https://invoicingspecialists.com",
+  "repository": "coolifystealthagents/invoicing-specialists",
+  "branch": "main",
+  "publicationDate": "2026-10-12",
+  "blog": [
+    {
+      "slug": "invoice-source-to-draft-custody",
+      "title": "Preserve Source-to-Draft Custody for Every Invoice",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/invoice-source-to-draft-custody.webp"
+    },
+    {
+      "slug": "customer-billing-master-change-control",
+      "title": "Control Changes to Customer Billing Master Data",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/customer-billing-master-change-control.webp"
+    },
+    {
+      "slug": "purchase-order-match-exception-queue",
+      "title": "Build a Purchase Order Match Exception Queue",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/purchase-order-match-exception-queue.webp"
+    },
+    {
+      "slug": "milestone-billing-evidence-checklist",
+      "title": "Create a Milestone Billing Evidence Checklist",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/milestone-billing-evidence-checklist.webp"
+    },
+    {
+      "slug": "recurring-invoice-calendar-governance",
+      "title": "Govern Recurring Invoice Calendars",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/recurring-invoice-calendar-governance.webp"
+    },
+    {
+      "slug": "invoice-tax-field-escalation",
+      "title": "Escalate Invoice Tax Fields Without Administrative Guesswork",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/invoice-tax-field-escalation.webp"
+    },
+    {
+      "slug": "credit-memo-request-routing",
+      "title": "Route Credit Memo Requests to Accountable Owners",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/credit-memo-request-routing.webp"
+    },
+    {
+      "slug": "invoice-approval-custody-log",
+      "title": "Build an Invoice Approval Custody Log",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/invoice-approval-custody-log.webp"
+    },
+    {
+      "slug": "invoice-delivery-evidence-register",
+      "title": "Maintain an Invoice Delivery Evidence Register",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/invoice-delivery-evidence-register.webp"
+    },
+    {
+      "slug": "duplicate-invoice-candidate-review",
+      "title": "Route Duplicate Invoice Candidates for Review",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/duplicate-invoice-candidate-review.webp"
+    },
+    {
+      "slug": "invoice-system-outage-reconciliation",
+      "title": "Reconcile Invoice Activity After a System Outage",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/invoice-system-outage-reconciliation.webp"
+    },
+    {
+      "slug": "invoice-dispute-intake-boundaries",
+      "title": "Set Boundaries for Invoice Dispute Intake",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/invoice-dispute-intake-boundaries.webp"
+    }
+  ],
+  "research": [
+    {
+      "slug": "invoice-draft-completeness-measures",
+      "title": "Methods for Measuring Invoice Draft Completeness",
+      "sourcePath": "lib/october12-research.ts",
+      "thumbnailPath": "public/thumbnails/october-12/invoice-draft-completeness-measures.webp",
+      "sourceCount": 10
+    },
+    {
+      "slug": "invoice-approval-cycle-timestamps",
+      "title": "Evidence-Based Analysis of Invoice Approval Cycles",
+      "sourcePath": "lib/october12-research.ts",
+      "thumbnailPath": "public/thumbnails/october-12/invoice-approval-cycle-timestamps.webp",
+      "sourceCount": 10
+    },
+    {
+      "slug": "duplicate-invoice-control-sampling",
+      "title": "Sample Design for Duplicate Invoice Control Review",
+      "sourcePath": "lib/october12-research.ts",
+      "thumbnailPath": "public/thumbnails/october-12/duplicate-invoice-control-sampling.webp",
+      "sourceCount": 10
+    },
+    {
+      "slug": "customer-billing-data-provenance",
+      "title": "Data Provenance Controls for Customer Billing Records",
+      "sourcePath": "lib/october12-research.ts",
+      "thumbnailPath": "public/thumbnails/october-12/customer-billing-data-provenance.webp",
+      "sourceCount": 10
+    },
+    {
+      "slug": "invoice-delivery-evidence-methods",
+      "title": "Methods for Reviewing Invoice Delivery Evidence",
+      "sourcePath": "lib/october12-research.ts",
+      "thumbnailPath": "public/thumbnails/october-12/invoice-delivery-evidence-methods.webp",
+      "sourceCount": 10
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "blogs": [
+    {
+      "slug": "invoice-source-to-draft-custody",
+      "title": "Preserve Source-to-Draft Custody for Every Invoice"
+    },
+    {
+      "slug": "customer-billing-master-change-control",
+      "title": "Control Changes to Customer Billing Master Data"
+    },
+    {
+      "slug": "purchase-order-match-exception-queue",
+      "title": "Build a Purchase Order Match Exception Queue"
+    },
+    {
+      "slug": "milestone-billing-evidence-checklist",
+      "title": "Create a Milestone Billing Evidence Checklist"
+    },
+    {
+      "slug": "recurring-invoice-calendar-governance",
+      "title": "Govern Recurring Invoice Calendars"
+    },
+    {
+      "slug": "invoice-tax-field-escalation",
+      "title": "Escalate Invoice Tax Fields Without Administrative Guesswork"
+    },
+    {
+      "slug": "credit-memo-request-routing",
+      "title": "Route Credit Memo Requests to Accountable Owners"
+    },
+    {
+      "slug": "invoice-approval-custody-log",
+      "title": "Build an Invoice Approval Custody Log"
+    },
+    {
+      "slug": "invoice-delivery-evidence-register",
+      "title": "Maintain an Invoice Delivery Evidence Register"
+    },
+    {
+      "slug": "duplicate-invoice-candidate-review",
+      "title": "Route Duplicate Invoice Candidates for Review"
+    },
+    {
+      "slug": "invoice-system-outage-reconciliation",
+      "title": "Reconcile Invoice Activity After a System Outage"
+    },
+    {
+      "slug": "invoice-dispute-intake-boundaries",
+      "title": "Set Boundaries for Invoice Dispute Intake"
+    }
+  ],
+  "research": [
+    {
+      "slug": "invoice-draft-completeness-measures",
+      "title": "Methods for Measuring Invoice Draft Completeness"
+    },
+    {
+      "slug": "invoice-approval-cycle-timestamps",
+      "title": "Evidence-Based Analysis of Invoice Approval Cycles"
+    },
+    {
+      "slug": "duplicate-invoice-control-sampling",
+      "title": "Sample Design for Duplicate Invoice Control Review"
+    },
+    {
+      "slug": "customer-billing-data-provenance",
+      "title": "Data Provenance Controls for Customer Billing Records"
+    },
+    {
+      "slug": "invoice-delivery-evidence-methods",
+      "title": "Methods for Reviewing Invoice Delivery Evidence"
+    }
+  ]
+}
