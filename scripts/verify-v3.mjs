@@ -12,6 +12,7 @@ const content = read('lib/content.ts');
 const css = read('app/globals.css');
 const contact = read('app/contact-us/page.tsx');
 const contactCss = read('app/contact-us/contact.css');
+const reviewMarquee = read('components/ReviewMarquee.tsx');
 const service = read('app/services/[slug]/page.tsx');
 const blog = read('app/blog/[slug]/page.tsx');
 const research = read('app/research/[slug]/page.tsx');
@@ -30,10 +31,11 @@ if (fs.existsSync(path.join(root, 'content/stealth-agents-proof.json'))) {
   requireMatch(proof.reviews?.length >= 10, 'At least 10 approved StealthAgents reviews are required.');
   requireMatch(new Set(proof.reviews?.map((review) => `${review.name}|${review.quote}`)).size === proof.reviews?.length, 'StealthAgents reviews must be unique.');
 }
-requireMatch(contact.includes('StealthAgents reviews') && contact.includes('review-marquee'), 'Contact Us must visibly identify and render the StealthAgents review marquee.');
+requireMatch(contact.includes('StealthAgents reviews') && contact.includes('<ReviewMarquee reviews={proof.reviews} />') && reviewMarquee.includes('className={`review-marquee'), 'Contact Us must visibly identify and render the StealthAgents review marquee.');
 requireMatch(!contact.includes('<iframe') && !contact.includes('go.oncehub.com'), 'Contact Us must not embed OnceHub.');
 requireMatch(contact.includes('/brand/stealth-agents-team-bacolod') && contact.includes('/brand/stealth-agents-logo-black.png') && contact.includes('Official team, Bacolod'), 'Contact Us must use the official team photo, official logo, and exact Bacolod plate.');
 requireMatch(/@keyframes\s+reviewMarquee/.test(contactCss) && /prefers-reduced-motion:\s*reduce/.test(contactCss), 'Review marquee must auto-scroll and honor reduced motion.');
+requireMatch(contact.includes('<ReviewMarquee reviews={proof.reviews} />') && reviewMarquee.includes('aria-pressed={paused}') && reviewMarquee.includes('aria-controls="review-marquee"') && reviewMarquee.includes("paused ? 'Play reviews' : 'Pause reviews'") && contactCss.includes('.review-marquee.is-paused .review-track{animation-play-state:paused}'), 'Review marquee must provide an explicit keyboard-operable Pause/Play control with exposed state.');
 requireMatch(thankYou.includes('https://go.oncehub.com/StealthAgentsTeam') && thankYou.includes('/thanks-whats-next') && !thankYou.includes('data-booking-success-destination') && thankYou.includes('OnceHub controls the post-booking experience'), 'Thank-you page must host OnceHub, provide explicit booking next steps, and avoid claiming that local markup configures the external provider.');
 requireMatch(confirmation.includes('If OnceHub accepted your selected time') && confirmation.includes('booking confirmation'), 'Booking next-steps page must condition its confirmation guidance on OnceHub acceptance.');
 for (const heading of ['Who this service is for', 'Inputs the workflow needs', 'What the specialist delivers', 'Quality controls', 'What remains a human decision', 'Common starting scenarios', 'Frequently asked questions', 'Related services']) {

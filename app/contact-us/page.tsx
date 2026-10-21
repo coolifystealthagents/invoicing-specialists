@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { LeadForm } from '@/components/LeadForm';
+import { ReviewMarquee } from '@/components/ReviewMarquee';
 import { site } from '@/lib/site';
 import proof from '@/content/stealth-agents-proof.json';
 import './contact.css';
@@ -30,7 +31,7 @@ export default function ContactPage() {
         <p>Map the recurring preparation, documentation, quality checks, and status work that slows your finance team. Keep pricing, judgment, approval, and release with accountable owners.</p>
         <div className="contact-visual"><Image src={site.heroImage} alt={site.heroAlt} fill priority sizes="(max-width: 900px) 100vw, 46vw" /></div>
         <div className="review-heading"><strong>StealthAgents reviews</strong><span>First-party testimonials published by Stealth Agents</span></div>
-        <div className="review-marquee" aria-label="StealthAgents reviews"><div className="review-track">{[...proof.reviews, ...proof.reviews].map((review, index) => <article className="review-card" key={`${review.name}-${index}`} aria-hidden={index >= proof.reviews.length || undefined}><blockquote>“{review.quote}”</blockquote><cite>{review.name}</cite></article>)}</div></div>
+        <ReviewMarquee reviews={proof.reviews} />
       </div>
       <div className="contact-form-card"><p className="eyebrow">Start with your workflow</p><h2>Book a free consultation</h2><p>Share enough to prepare a useful conversation. Do not include credentials, customer records, invoice details, or payment data.</p><LeadForm source="contact-page-consultation" /></div>
     </section>
