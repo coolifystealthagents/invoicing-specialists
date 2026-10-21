@@ -10,9 +10,7 @@ function firstHeaderValue(value: string | null) {
 }
 
 function requestHost(request: NextRequest) {
-  const forwarded = firstHeaderValue(request.headers.get('x-forwarded-host'));
-  const direct = firstHeaderValue(request.headers.get('host'));
-  return (forwarded || direct).split(':', 1)[0];
+  return firstHeaderValue(request.headers.get('host')).split(':', 1)[0];
 }
 
 function cloudflareScheme(request: NextRequest) {
@@ -31,6 +29,9 @@ function cloudflareScheme(request: NextRequest) {
 }
 
 function requestScheme(request: NextRequest) {
+  // Cloudflare and the Coolify/Traefik boundary overwrite these scheme headers
+  // before production traffic reaches this container. Host routing still uses
+  // the direct Host header so client-supplied forwarded hosts cannot bypass it.
   const cloudflare = cloudflareScheme(request);
   if (cloudflare) return cloudflare;
   const forwarded = firstHeaderValue(request.headers.get('x-forwarded-proto'));

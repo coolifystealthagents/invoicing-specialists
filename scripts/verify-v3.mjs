@@ -34,16 +34,17 @@ requireMatch(contact.includes('StealthAgents reviews') && contact.includes('revi
 requireMatch(!contact.includes('<iframe') && !contact.includes('go.oncehub.com'), 'Contact Us must not embed OnceHub.');
 requireMatch(contact.includes('/brand/stealth-agents-team-bacolod') && contact.includes('/brand/stealth-agents-logo-black.png') && contact.includes('Official team, Bacolod'), 'Contact Us must use the official team photo, official logo, and exact Bacolod plate.');
 requireMatch(/@keyframes\s+reviewMarquee/.test(contactCss) && /prefers-reduced-motion:\s*reduce/.test(contactCss), 'Review marquee must auto-scroll and honor reduced motion.');
-requireMatch(thankYou.includes('https://go.oncehub.com/StealthAgentsTeam') && thankYou.includes('/thanks-whats-next'), 'Thank-you page must host OnceHub and configure the booked-consultation destination.');
-requireMatch(confirmation.includes('consultation') && confirmation.includes('book'), 'Booking confirmation page must clearly confirm the consultation.');
+requireMatch(thankYou.includes('https://go.oncehub.com/StealthAgentsTeam') && thankYou.includes('/thanks-whats-next') && !thankYou.includes('data-booking-success-destination') && thankYou.includes('OnceHub controls the post-booking experience'), 'Thank-you page must host OnceHub, provide explicit booking next steps, and avoid claiming that local markup configures the external provider.');
+requireMatch(confirmation.includes('If OnceHub accepted your selected time') && confirmation.includes('booking confirmation'), 'Booking next-steps page must condition its confirmation guidance on OnceHub acceptance.');
 for (const heading of ['Who this service is for', 'Inputs the workflow needs', 'What the specialist delivers', 'Quality controls', 'What remains a human decision', 'Common starting scenarios', 'Frequently asked questions', 'Related services']) {
   requireMatch(service.includes(heading), `Every service detail needs a ${heading} section.`);
 }
 requireMatch(service.includes('service-hero-image'), 'Every service detail must include a relevant hero image.');
 requireMatch(blog.includes('ArticleSidebar') && research.includes('ArticleSidebar'), 'Every blog and research article must use the shared populated article sidebar and TOC.');
+requireMatch(research.includes('post.faq?.length') && research.includes('id="frequently-asked-questions"') && research.includes("label: 'Frequently asked questions'"), 'Research articles must preserve FAQ content and include it in the active TOC when present.');
 requireMatch(!/service-number|method-art/.test(read('components/Marketing.tsx')), 'Decorative numbered commercial labels must be removed.');
 requireMatch(!/0\{index\s*\+\s*1\}/.test(contact), 'Decorative zero-padded process labels must be removed from Contact Us.');
-requireMatch(proxy.includes("const APEX_HOST = 'invoicingspecialists.com'") && proxy.includes("const WWW_HOST = 'www.invoicingspecialists.com'"), 'Canonical redirects must use an exact production-host allowlist.');
+requireMatch(proxy.includes("const APEX_HOST = 'invoicingspecialists.com'") && proxy.includes("const WWW_HOST = 'www.invoicingspecialists.com'") && proxy.includes("request.headers.get('host')") && !proxy.includes("request.headers.get('x-forwarded-host')"), 'Canonical redirects must use the direct Host header and an exact production-host allowlist.');
 requireMatch(proxy.includes("request.headers.get('cf-visitor')") && proxy.includes("request.headers.get('x-forwarded-proto')"), 'Canonical redirects must prefer Cloudflare visitor scheme with a forwarded-protocol fallback.');
 requireMatch(proxy.includes('destination.pathname = request.nextUrl.pathname') && proxy.includes('destination.search = request.nextUrl.search') && proxy.includes('NextResponse.redirect(destination, 308)'), 'Canonical redirects must preserve path and query with a permanent fixed-origin redirect.');
 
