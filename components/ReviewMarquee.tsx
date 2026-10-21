@@ -13,10 +13,11 @@ export function ReviewMarquee({ reviews }: { reviews: Review[] }) {
         className="review-toggle"
         type="button"
         aria-pressed={paused}
+        aria-label="Pause automatic review movement"
         aria-controls="review-marquee"
         onClick={() => setPaused(value => !value)}
       >
-        {paused ? 'Play reviews' : 'Pause reviews'}
+        <span aria-hidden="true">{paused ? 'Play reviews' : 'Pause reviews'}</span>
       </button>
     </div>
     <div id="review-marquee" className={`review-marquee${paused ? ' is-paused' : ''}`} aria-label="StealthAgents reviews">
