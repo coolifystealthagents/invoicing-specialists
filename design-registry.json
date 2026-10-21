@@ -1,0 +1,26 @@
+[
+  {
+    "domain": "invoicingspecialists.com",
+    "industry": "invoicing operations staffing",
+    "audience": "controllers, finance leaders, and business owners",
+    "designFamily": "warm press-room editorial",
+    "heroComposition": "dark editorial statement paired with a copper invoice press still life",
+    "typeCharacter": "authoritative book serif display with practical humanist sans body",
+    "paletteFamily": "ink black, paper cream, and burnished copper",
+    "shapeGrammar": "ruled ledger surfaces, clipped evidence panels, and restrained circular seals",
+    "imageTreatment": "high-contrast studio still life, invoice-specific editorial art, and documentary team photography",
+    "sectionRhythm": "large editorial statements alternating with compact operational ledgers",
+    "navigationTreatment": "persistent paper bar with three exact destinations and compact parent-brand proof",
+    "motionSignature": "quiet state changes with one continuous review ticker",
+    "density": "medium-high information density with deliberate reading space",
+    "signatureElement": "source-to-approval invoice ledger showing inputs, prepared output, and accountable decision",
+    "settings": {
+      "DESIGN_VARIANCE": 7,
+      "MOTION_INTENSITY": 3,
+      "VISUAL_DENSITY": 7,
+      "redesignMode": "evolve",
+      "primaryTheme": "light",
+      "accentStrategy": "copper reserved for decisions, proof, and action"
+    }
+  }
+]
