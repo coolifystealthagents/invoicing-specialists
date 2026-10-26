@@ -1,6 +1,8 @@
 import type { BlogPost, ResearchPost } from './types';
 
-export const october26BlogPosts: BlogPost[] = [
+type October26BlogPost = BlogPost & { sources: { label: string; url: string }[] };
+
+export const october26BlogPosts: October26BlogPost[] = [
   {
     "slug": "inv-evidence-aged-backlog",
     "title": "Triage an Aged Invoicing And Billing Operations Backlog by Evidence Quality",
@@ -114,7 +116,29 @@ export const october26BlogPosts: BlogPost[] = [
     "source": {
       "label": "Internal Revenue Service",
       "url": "https://www.irs.gov/"
-    }
+    },
+    "sources": [
+      {
+        "label": "Internal Revenue Service",
+        "url": "https://www.irs.gov/"
+      },
+      {
+        "label": "GAO Assessing Data Reliability",
+        "url": "https://www.gao.gov/products/gao-20-283g"
+      },
+      {
+        "label": "Association for Supply Chain Management",
+        "url": "https://www.ascm.org/"
+      },
+      {
+        "label": "Project Management Institute Standards",
+        "url": "https://www.pmi.org/standards"
+      },
+      {
+        "label": "SEC Recordkeeping Guidance",
+        "url": "https://www.sec.gov/rules-regulations/staff-guidance/division-investment-management-frequently-asked-questions"
+      }
+    ]
   },
   {
     "slug": "inv-duplicate-request-screen",
@@ -229,7 +253,29 @@ export const october26BlogPosts: BlogPost[] = [
     "source": {
       "label": "Internal Revenue Service",
       "url": "https://www.irs.gov/"
-    }
+    },
+    "sources": [
+      {
+        "label": "Internal Revenue Service",
+        "url": "https://www.irs.gov/"
+      },
+      {
+        "label": "SEC Investment Adviser Compliance",
+        "url": "https://www.sec.gov/investment/investment-adviser-compliance"
+      },
+      {
+        "label": "SBA Business Guide",
+        "url": "https://www.sba.gov/business-guide"
+      },
+      {
+        "label": "GAO Assessing Data Reliability",
+        "url": "https://www.gao.gov/products/gao-20-283g"
+      },
+      {
+        "label": "Association for Supply Chain Management",
+        "url": "https://www.ascm.org/"
+      }
+    ]
   },
   {
     "slug": "inv-role-change-handover",
@@ -344,7 +390,29 @@ export const october26BlogPosts: BlogPost[] = [
     "source": {
       "label": "Internal Revenue Service",
       "url": "https://www.irs.gov/"
-    }
+    },
+    "sources": [
+      {
+        "label": "Internal Revenue Service",
+        "url": "https://www.irs.gov/"
+      },
+      {
+        "label": "Association for Supply Chain Management",
+        "url": "https://www.ascm.org/"
+      },
+      {
+        "label": "SEC Recordkeeping Guidance",
+        "url": "https://www.sec.gov/rules-regulations/staff-guidance/division-investment-management-frequently-asked-questions"
+      },
+      {
+        "label": "SEC Investment Adviser Compliance",
+        "url": "https://www.sec.gov/investment/investment-adviser-compliance"
+      },
+      {
+        "label": "GAO Assessing Data Reliability",
+        "url": "https://www.gao.gov/products/gao-20-283g"
+      }
+    ]
   },
   {
     "slug": "inv-decision-log",
@@ -459,7 +527,29 @@ export const october26BlogPosts: BlogPost[] = [
     "source": {
       "label": "Internal Revenue Service",
       "url": "https://www.irs.gov/"
-    }
+    },
+    "sources": [
+      {
+        "label": "Internal Revenue Service",
+        "url": "https://www.irs.gov/"
+      },
+      {
+        "label": "SEC Recordkeeping Guidance",
+        "url": "https://www.sec.gov/rules-regulations/staff-guidance/division-investment-management-frequently-asked-questions"
+      },
+      {
+        "label": "Association for Supply Chain Management",
+        "url": "https://www.ascm.org/"
+      },
+      {
+        "label": "U.S. General Services Administration",
+        "url": "https://www.gsa.gov/"
+      },
+      {
+        "label": "Project Management Institute Standards",
+        "url": "https://www.pmi.org/standards"
+      }
+    ]
   },
   {
     "slug": "inv-document-expiry-watch",
@@ -574,7 +664,29 @@ export const october26BlogPosts: BlogPost[] = [
     "source": {
       "label": "Internal Revenue Service",
       "url": "https://www.irs.gov/"
-    }
+    },
+    "sources": [
+      {
+        "label": "Internal Revenue Service",
+        "url": "https://www.irs.gov/"
+      },
+      {
+        "label": "Association for Supply Chain Management",
+        "url": "https://www.ascm.org/"
+      },
+      {
+        "label": "SEC Investment Adviser Compliance",
+        "url": "https://www.sec.gov/investment/investment-adviser-compliance"
+      },
+      {
+        "label": "Project Management Institute Standards",
+        "url": "https://www.pmi.org/standards"
+      },
+      {
+        "label": "SBA Business Guide",
+        "url": "https://www.sba.gov/business-guide"
+      }
+    ]
   },
   {
     "slug": "inv-shared-inbox-map",
@@ -689,7 +801,29 @@ export const october26BlogPosts: BlogPost[] = [
     "source": {
       "label": "Internal Revenue Service",
       "url": "https://www.irs.gov/"
-    }
+    },
+    "sources": [
+      {
+        "label": "Internal Revenue Service",
+        "url": "https://www.irs.gov/"
+      },
+      {
+        "label": "GAO Standards for Internal Control",
+        "url": "https://www.gao.gov/products/gao-14-704g"
+      },
+      {
+        "label": "SBA Business Guide",
+        "url": "https://www.sba.gov/business-guide"
+      },
+      {
+        "label": "U.S. General Services Administration",
+        "url": "https://www.gsa.gov/"
+      },
+      {
+        "label": "SEC Investment Adviser Compliance",
+        "url": "https://www.sec.gov/investment/investment-adviser-compliance"
+      }
+    ]
   },
   {
     "slug": "inv-onboarding-packet",
@@ -804,7 +938,29 @@ export const october26BlogPosts: BlogPost[] = [
     "source": {
       "label": "Internal Revenue Service",
       "url": "https://www.irs.gov/"
-    }
+    },
+    "sources": [
+      {
+        "label": "Internal Revenue Service",
+        "url": "https://www.irs.gov/"
+      },
+      {
+        "label": "FINRA Rule 4511",
+        "url": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/4511"
+      },
+      {
+        "label": "Project Management Institute Standards",
+        "url": "https://www.pmi.org/standards"
+      },
+      {
+        "label": "Association for Supply Chain Management",
+        "url": "https://www.ascm.org/"
+      },
+      {
+        "label": "GAO Assessing Data Reliability",
+        "url": "https://www.gao.gov/products/gao-20-283g"
+      }
+    ]
   },
   {
     "slug": "inv-recurring-report-reconciliation",
@@ -919,7 +1075,29 @@ export const october26BlogPosts: BlogPost[] = [
     "source": {
       "label": "Internal Revenue Service",
       "url": "https://www.irs.gov/"
-    }
+    },
+    "sources": [
+      {
+        "label": "Internal Revenue Service",
+        "url": "https://www.irs.gov/"
+      },
+      {
+        "label": "SEC Recordkeeping Guidance",
+        "url": "https://www.sec.gov/rules-regulations/staff-guidance/division-investment-management-frequently-asked-questions"
+      },
+      {
+        "label": "SEC Investment Adviser Compliance",
+        "url": "https://www.sec.gov/investment/investment-adviser-compliance"
+      },
+      {
+        "label": "SBA Business Guide",
+        "url": "https://www.sba.gov/business-guide"
+      },
+      {
+        "label": "Project Management Institute Standards",
+        "url": "https://www.pmi.org/standards"
+      }
+    ]
   },
   {
     "slug": "inv-calendar-conflict-rules",
@@ -1034,7 +1212,29 @@ export const october26BlogPosts: BlogPost[] = [
     "source": {
       "label": "Internal Revenue Service",
       "url": "https://www.irs.gov/"
-    }
+    },
+    "sources": [
+      {
+        "label": "Internal Revenue Service",
+        "url": "https://www.irs.gov/"
+      },
+      {
+        "label": "Project Management Institute Standards",
+        "url": "https://www.pmi.org/standards"
+      },
+      {
+        "label": "SBA Business Guide",
+        "url": "https://www.sba.gov/business-guide"
+      },
+      {
+        "label": "GAO Standards for Internal Control",
+        "url": "https://www.gao.gov/products/gao-14-704g"
+      },
+      {
+        "label": "GAO Assessing Data Reliability",
+        "url": "https://www.gao.gov/products/gao-20-283g"
+      }
+    ]
   },
   {
     "slug": "inv-sampling-ai-assisted",
@@ -1149,7 +1349,29 @@ export const october26BlogPosts: BlogPost[] = [
     "source": {
       "label": "Internal Revenue Service",
       "url": "https://www.irs.gov/"
-    }
+    },
+    "sources": [
+      {
+        "label": "Internal Revenue Service",
+        "url": "https://www.irs.gov/"
+      },
+      {
+        "label": "FINRA Rule 4511",
+        "url": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/4511"
+      },
+      {
+        "label": "GAO Standards for Internal Control",
+        "url": "https://www.gao.gov/products/gao-14-704g"
+      },
+      {
+        "label": "SEC Investment Adviser Compliance",
+        "url": "https://www.sec.gov/investment/investment-adviser-compliance"
+      },
+      {
+        "label": "Project Management Institute Standards",
+        "url": "https://www.pmi.org/standards"
+      }
+    ]
   },
   {
     "slug": "inv-tool-consolidation-access",
@@ -1264,7 +1486,29 @@ export const october26BlogPosts: BlogPost[] = [
     "source": {
       "label": "Internal Revenue Service",
       "url": "https://www.irs.gov/"
-    }
+    },
+    "sources": [
+      {
+        "label": "Internal Revenue Service",
+        "url": "https://www.irs.gov/"
+      },
+      {
+        "label": "ISO 31000 Risk Management",
+        "url": "https://www.iso.org/iso-31000-risk-management.html"
+      },
+      {
+        "label": "SBA Business Guide",
+        "url": "https://www.sba.gov/business-guide"
+      },
+      {
+        "label": "U.S. General Services Administration",
+        "url": "https://www.gsa.gov/"
+      },
+      {
+        "label": "SEC Investment Adviser Compliance",
+        "url": "https://www.sec.gov/investment/investment-adviser-compliance"
+      }
+    ]
   },
   {
     "slug": "inv-exception-trend-brief",
@@ -1379,7 +1623,29 @@ export const october26BlogPosts: BlogPost[] = [
     "source": {
       "label": "Internal Revenue Service",
       "url": "https://www.irs.gov/"
-    }
+    },
+    "sources": [
+      {
+        "label": "Internal Revenue Service",
+        "url": "https://www.irs.gov/"
+      },
+      {
+        "label": "SBA Business Guide",
+        "url": "https://www.sba.gov/business-guide"
+      },
+      {
+        "label": "Association for Supply Chain Management",
+        "url": "https://www.ascm.org/"
+      },
+      {
+        "label": "SEC Recordkeeping Guidance",
+        "url": "https://www.sec.gov/rules-regulations/staff-guidance/division-investment-management-frequently-asked-questions"
+      },
+      {
+        "label": "GAO Assessing Data Reliability",
+        "url": "https://www.gao.gov/products/gao-20-283g"
+      }
+    ]
   }
 ];
 
