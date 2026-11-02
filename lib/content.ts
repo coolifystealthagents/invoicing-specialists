@@ -920,8 +920,8 @@ const legacyResearchPosts: ResearchPost[] = [
   }
 ];
 
-export const blogPosts: BlogPost[] = [...oct27b, ...oct26b, ...oct25b, ...october22BlogPosts, ...october12BlogPosts, ...legacyBlogPosts];
-export const researchPosts: ResearchPost[] = [...oct27r, ...oct26r, ...oct25r, ...october22ResearchPosts, ...october12ResearchPosts, ...legacyResearchPosts];
+export const blogPosts: BlogPost[] = [...november01BlogPosts, ...oct27b, ...oct26b, ...oct25b, ...october22BlogPosts, ...october12BlogPosts, ...legacyBlogPosts].sort((a,b)=>String(b.publishedAt).localeCompare(String(a.publishedAt)));
+export const researchPosts: ResearchPost[] = [...november01ResearchPosts, ...oct27r, ...oct26r, ...oct25r, ...october22ResearchPosts, ...october12ResearchPosts, ...legacyResearchPosts].sort((a,b)=>String(b.publishedAt).localeCompare(String(a.publishedAt)));
 
 export const nav = [
   { href: '/', label: 'Home' },
