@@ -19,15 +19,13 @@ export function MobileToc({ items }: { items: TocItem[] }) {
         <span>On this page</span>
         <span aria-hidden="true">{open ? 'Close' : 'Open'}</span>
       </button>
-      {open ? (
-        <nav id="mobile-toc-list" aria-label="Table of contents">
-          {items.map((item) => (
-            <a key={item.id} href={`#${item.id}`} onClick={() => setOpen(false)}>
-              {item.label}
-            </a>
-          ))}
-        </nav>
-      ) : null}
+      <nav id="mobile-toc-list" aria-label="Table of contents" hidden={!open}>
+        {items.map((item) => (
+          <a key={item.id} href={`#${item.id}`} onClick={() => setOpen(false)}>
+            {item.label}
+          </a>
+        ))}
+      </nav>
     </div>
   );
 }

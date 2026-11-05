@@ -52,3 +52,10 @@
   .mobile-toc{top:132px}
   .article-prose section{scroll-margin-top:9rem}
 }
+
+/* 2026-11-05 batch: compact two-column article and continuous prose */
+.article-layout{grid-template-columns:minmax(0,720px) 280px;gap:32px}
+.article-prose section+section{margin-top:2.2rem}
+.article-prose h2{margin:1.8em 0 .65em}
+.article-prose p{margin:0 0 1.15em}
+@media(max-width:900px){.article-layout{gap:24px}}
