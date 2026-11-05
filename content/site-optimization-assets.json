@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-11-05",
+  "generator": "OpenAI built-in image generation",
+  "scope": "Invoicing Specialists editorial index heroes",
+  "assets": [
+    {
+      "path": "/editorial/invoicing-workflow-hero.jpg",
+      "source": "/Users/bohoseventy/.codex/generated_images/01a1a233-c8c4-7f61-815a-ae5ea3256737/exec-4527de6a-cbd1-4ac8-a8b5-1ed8496d8e58.png",
+      "dimensions": "1672x941",
+      "use": "/blog hero",
+      "alt": "Organized invoice draft, supporting papers, calculator, and review folders on a finance operations desk",
+      "promptSummary": "Premium natural editorial photograph of a day-to-day invoicing workflow desk, no people, logos, client information, readable text, screens, or fabricated data."
+    },
+    {
+      "path": "/editorial/billing-research-hero.jpg",
+      "source": "/Users/bohoseventy/.codex/generated_images/01a1a233-c8c4-7f61-815a-ae5ea3256737/exec-d028c9e0-18aa-4bf0-9b0e-138407ac7c79.png",
+      "dimensions": "1672x941",
+      "use": "/research hero",
+      "alt": "Printed billing trend charts and analysis materials arranged for an evidence review",
+      "promptSummary": "Premium natural editorial photograph of billing trend and receivables analysis materials, no people, logos, client information, readable text, screens, or claim-bearing data."
+    }
+  ]
+}
