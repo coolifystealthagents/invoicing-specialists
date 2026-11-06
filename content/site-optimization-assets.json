@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-05",
+  "generatedAt": "2026-11-06",
   "generator": "OpenAI built-in image generation",
-  "scope": "Invoicing Specialists editorial index heroes",
+  "scope": "Invoicing Specialists editorial and service heroes",
   "assets": [
     {
       "path": "/editorial/invoicing-workflow-hero.jpg",
@@ -18,6 +18,62 @@
       "use": "/research hero",
       "alt": "Printed billing trend charts and analysis materials arranged for an evidence review",
       "promptSummary": "Premium natural editorial photograph of billing trend and receivables analysis materials, no people, logos, client information, readable text, screens, or claim-bearing data."
+    },
+    {
+      "path": "/editorial/services-invoicing-workflow-hero.jpg",
+      "source": "/Users/bohoseventy/.codex/generated_images/01a1a233-c8c4-7f61-815a-ae5ea3256737/exec-bc820b9b-9471-462a-b2f1-36b67dff2199.png",
+      "dimensions": "1672x941",
+      "use": "/services hero",
+      "alt": "Approved invoice source records, a review checklist, and an organized billing packet arranged as a controlled workflow",
+      "promptSummary": "Professional editorial photograph of an approved-record-to-review workflow, with no people, logos, client data, readable values, screens, or claims."
+    },
+    {
+      "path": "/editorial/services/invoice-draft-preparation.jpg",
+      "source": "/Users/bohoseventy/.codex/generated_images/01a1a233-c8c4-7f61-815a-ae5ea3256737/exec-13585401-5c93-487a-9ee7-9b6722ecf1da.png",
+      "dimensions": "1672x941",
+      "use": "/services/invoice-draft-preparation hero",
+      "alt": "Approved invoice source records, a prepared draft, and a completed review checklist",
+      "promptSummary": "Editorial finance-operations photograph of source records moving into a prepared draft and review checklist."
+    },
+    {
+      "path": "/editorial/services/billing-schedule-support.jpg",
+      "source": "/Users/bohoseventy/.codex/generated_images/01a1a233-c8c4-7f61-815a-ae5ea3256737/exec-3a43d045-18d6-49d7-937d-414dd04c34cc.png",
+      "dimensions": "1672x941",
+      "use": "/services/billing-schedule-support hero",
+      "alt": "Billing calendar, milestone timeline, and organized invoice schedule queue",
+      "promptSummary": "Editorial finance-operations photograph of a billing calendar, milestone timeline, and forward queue."
+    },
+    {
+      "path": "/editorial/services/supporting-documentation.jpg",
+      "source": "/Users/bohoseventy/.codex/generated_images/01a1a233-c8c4-7f61-815a-ae5ea3256737/exec-dc6d856f-0a63-4090-aa0d-c741b0165d76.png",
+      "dimensions": "1672x941",
+      "use": "/services/supporting-documentation hero",
+      "alt": "Indexed supporting records assembled with a billing evidence checklist",
+      "promptSummary": "Editorial finance-operations photograph of indexed evidence assembled into a complete support packet."
+    },
+    {
+      "path": "/editorial/services/invoice-quality-review.jpg",
+      "source": "/Users/bohoseventy/.codex/generated_images/01a1a233-c8c4-7f61-815a-ae5ea3256737/exec-9bb7df44-738f-4b72-8840-37564e932d47.png",
+      "dimensions": "1672x941",
+      "use": "/services/invoice-quality-review hero",
+      "alt": "Invoice packet and quality checklist arranged for a controlled preapproval review",
+      "promptSummary": "Editorial finance-operations photograph of an invoice packet, checklist, and documented exception review."
+    },
+    {
+      "path": "/editorial/services/customer-billing-records.jpg",
+      "source": "/Users/bohoseventy/.codex/generated_images/01a1a233-c8c4-7f61-815a-ae5ea3256737/exec-a857e4a6-27e3-4f54-9fe3-63eb1769dfbc.png",
+      "dimensions": "1672x941",
+      "use": "/services/customer-billing-records hero",
+      "alt": "Customer billing change records prepared for authorization and provenance review",
+      "promptSummary": "Editorial finance-operations photograph of before-and-after record changes and authorization evidence."
+    },
+    {
+      "path": "/editorial/services/billing-status-reporting.jpg",
+      "source": "/Users/bohoseventy/.codex/generated_images/01a1a233-c8c4-7f61-815a-ae5ea3256737/exec-ce6d7736-f6b4-4da2-ae37-19e63364858f.png",
+      "dimensions": "1672x941",
+      "use": "/services/billing-status-reporting hero",
+      "alt": "Billing queue summaries and exception records arranged for an operational status review",
+      "promptSummary": "Editorial finance-operations photograph of queue summaries, exception records, and source evidence."
     }
   ]
 }
