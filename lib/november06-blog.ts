@@ -279,7 +279,7 @@ export const november06BlogPosts: readonly BlogPost[] = [
         "heading": "How to verify and close",
         "paragraphs": [
           "The billing terms record close should name the confirmer, the confirmation time, and the record checked. A close without a destination check is only a promise that something will happen later. The customer billing queue stays honest when failed closes return as open items with a new date. Review one closed customer billing terms case each week to confirm the routine still works. In the how to verify and close step, the written action is to record the account owner, the effective date, and the approver.",
-          "If the close cannot be reproduced, reopen the case rather than adding another note. A close note should be short enough to read and specific enough to verify. The specialist closes the preparation; the owner closes the decision.",
+          "If the close cannot be reproduced, reopen the case rather than adding another note. A close note should be short enough to read and specific enough to verify. The specialist closes the preparation; the owner closes the decision. For invoicing teams, the entry is filed beside the approved billing term and the invoice packet.",
           "The best close is the one the next reviewer can confirm in under a minute. A measured close rate without a definition is just a number with confidence. The customer billing terms review should look at the oldest close, not only the newest."
         ]
       }
@@ -472,7 +472,7 @@ export const november06BlogPosts: readonly BlogPost[] = [
         "heading": "What the billing exception record must show",
         "paragraphs": [
           "Write the source version beside the billing exception decision so a later change stays visible. A short billing exception note with four specific fields usually outperforms a long narrative. The record is complete when the reviewer can tell what would have counted as a different answer. The billing exception note should say what was checked, not just that a check happened. In the what the billing exception record must show step, the written action is to route client-blocking items to the on-call finance owner.",
-          "A short cross-reference to the system entry saves the next reviewer a search. The record should show the requested change and the approved change side by side. When a field is unknown, write unknown rather than leaving it blank.",
+          "A short cross-reference to the system entry saves the next reviewer a search. The record should show the requested change and the approved change side by side. When a field is unknown, write unknown rather than leaving it blank. The controller can trace the entry to the invoice packet without reopening the mailbox.",
           "The billing exception file should keep the original submission and the checked version together. A record with a named source and a timestamp can survive a staffing change. The reviewer should be able to tell whether the evidence came from a person, a system, or a document."
         ]
       },
