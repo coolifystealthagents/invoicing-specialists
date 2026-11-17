@@ -1,13 +1,13 @@
 import type { ResearchPost } from './types';
 export const november16ResearchPosts: ResearchPost[] = [
   {
-    "slug": "how-often-do-billing-corrections-keep-the-original-invoice",
-    "title": "How often do billing corrections keep the original invoice?",
+    "slug": "how-often-does-a-billing-correction-preserve-the-original-invoice",
+    "title": "How often does a billing correction preserve the original invoice?",
     "summary": "A proposed protocol for measuring whether a correction preserves the original invoice and the approval The following cycle adds a review checkpoint and a clearer exception path.",
     "cluster": "Billing controls",
     "publishedAt": "2026-11-16",
     "finding": "The study would test whether the correction trail is reconstructable or overwritten The follow-up should state what changed in the record.",
-    "thumbnail": "/thumbnails/november-16/how-often-do-billing-corrections-keep-the-original-invoice.webp",
+    "thumbnail": "/thumbnails/november-16/how-often-does-a-billing-correction-preserve-the-original-invoice.webp",
     "sections": [
       {
         "heading": "Question and scope",
@@ -82,13 +82,13 @@ export const november16ResearchPosts: ResearchPost[] = [
     ]
   },
   {
-    "slug": "what-share-of-retainer-invoices-match-the-time-record",
-    "title": "What share of retainer invoices match the time record?",
+    "slug": "how-closely-do-retainer-invoices-match-the-time-record",
+    "title": "How closely do retainer invoices match the time record?",
     "summary": "A proposed protocol for measuring whether a retainer invoice agrees with the approved time record The following cycle adds a review checkpoint and a clearer exception path.",
     "cluster": "Billing controls",
     "publishedAt": "2026-11-16",
     "finding": "The study would test whether the retainer invoice is reconciled or estimated The follow-up should state what changed in the record.",
-    "thumbnail": "/thumbnails/november-16/what-share-of-retainer-invoices-match-the-time-record.webp",
+    "thumbnail": "/thumbnails/november-16/how-closely-do-retainer-invoices-match-the-time-record.webp",
     "sections": [
       {
         "heading": "Question and scope",
@@ -163,13 +163,13 @@ export const november16ResearchPosts: ResearchPost[] = [
     ]
   },
   {
-    "slug": "how-complete-is-the-billing-approval-record",
-    "title": "How complete is the billing approval record?",
+    "slug": "how-complete-is-the-evidence-behind-a-billing-approval",
+    "title": "How complete is the evidence behind a billing approval?",
     "summary": "A proposed protocol for measuring whether the approval record names the approver, amount, and evidence The following cycle adds a review checkpoint and a clearer exception path.",
     "cluster": "Billing controls",
     "publishedAt": "2026-11-16",
     "finding": "The study would test whether the approval is a control or a signature added after release The follow-up should state what changed in the record.",
-    "thumbnail": "/thumbnails/november-16/how-complete-is-the-billing-approval-record.webp",
+    "thumbnail": "/thumbnails/november-16/how-complete-is-the-evidence-behind-a-billing-approval.webp",
     "sections": [
       {
         "heading": "Question and scope",
@@ -244,13 +244,13 @@ export const november16ResearchPosts: ResearchPost[] = [
     ]
   },
   {
-    "slug": "how-old-are-overdue-invoices-at-collections-handoff",
-    "title": "How old are overdue invoices at collections handoff?",
+    "slug": "how-old-are-overdue-invoices-when-collections-takes-over",
+    "title": "How old are overdue invoices when collections takes over?",
     "summary": "A proposed protocol for measuring the age and ownership of invoices at the point of collections handoff The following cycle adds a review checkpoint and a clearer exception path.",
     "cluster": "Collections",
     "publishedAt": "2026-11-16",
     "finding": "The study would test whether an overdue invoice has a complete handoff or a bare balance The follow-up should state what changed in the record.",
-    "thumbnail": "/thumbnails/november-16/how-old-are-overdue-invoices-at-collections-handoff.webp",
+    "thumbnail": "/thumbnails/november-16/how-old-are-overdue-invoices-when-collections-takes-over.webp",
     "sections": [
       {
         "heading": "Question and scope",
@@ -325,13 +325,13 @@ export const november16ResearchPosts: ResearchPost[] = [
     ]
   },
   {
-    "slug": "can-a-purchase-order-change-be-reproduced-from-its-evidence",
-    "title": "Can a purchase order change be reproduced from its evidence?",
+    "slug": "can-a-purchase-order-change-be-rebuilt-from-its-evidence",
+    "title": "Can a purchase order change be rebuilt from its evidence?",
     "summary": "A proposed protocol for testing whether a change order shows the original order, the change, and the approval The following cycle adds a review checkpoint and a clearer exception path.",
     "cluster": "Billing controls",
     "publishedAt": "2026-11-16",
     "finding": "The study would test whether the change is billable from the record or depends on a conversation The follow-up should state what changed in the record.",
-    "thumbnail": "/thumbnails/november-16/can-a-purchase-order-change-be-reproduced-from-its-evidence.webp",
+    "thumbnail": "/thumbnails/november-16/can-a-purchase-order-change-be-rebuilt-from-its-evidence.webp",
     "sections": [
       {
         "heading": "Question and scope",
@@ -406,13 +406,13 @@ export const november16ResearchPosts: ResearchPost[] = [
     ]
   },
   {
-    "slug": "how-consistent-is-tax-exemption-tracking",
-    "title": "How consistent is tax exemption tracking?",
+    "slug": "how-consistently-are-tax-exemption-certificates-tracked",
+    "title": "How consistently are tax exemption certificates tracked?",
     "summary": "A proposed protocol for comparing how different billing staff apply the same tax exemption certificate The following cycle adds a review checkpoint and a clearer exception path.",
     "cluster": "Tax billing",
     "publishedAt": "2026-11-16",
     "finding": "The study would test whether the exemption is applied from the certificate or from memory The follow-up should state what changed in the record.",
-    "thumbnail": "/thumbnails/november-16/how-consistent-is-tax-exemption-tracking.webp",
+    "thumbnail": "/thumbnails/november-16/how-consistently-are-tax-exemption-certificates-tracked.webp",
     "sections": [
       {
         "heading": "Question and scope",
@@ -487,13 +487,13 @@ export const november16ResearchPosts: ResearchPost[] = [
     ]
   },
   {
-    "slug": "where-does-delay-accumulate-in-a-billing-correction",
-    "title": "Where does delay accumulate in a billing correction?",
+    "slug": "where-does-delay-build-up-inside-a-billing-correction",
+    "title": "Where does delay build up inside a billing correction?",
     "summary": "A proposed protocol for separating the correction request, the approval, and the reissue in a billing correction The following cycle adds a review checkpoint and a clearer exception path.",
     "cluster": "Billing controls",
     "publishedAt": "2026-11-16",
     "finding": "The study would test whether delay comes from the request, the approver, or the reissue The follow-up should state what changed in the record.",
-    "thumbnail": "/thumbnails/november-16/where-does-delay-accumulate-in-a-billing-correction.webp",
+    "thumbnail": "/thumbnails/november-16/where-does-delay-build-up-inside-a-billing-correction.webp",
     "sections": [
       {
         "heading": "Question and scope",
