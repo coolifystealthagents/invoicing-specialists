@@ -43,3 +43,30 @@ export function AccountableReviewIcon() {
     </svg>
   );
 }
+
+export function BoundaryIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 5h16v14H4zM8 9h8M8 13h4" />
+      <path d="m15 15 2 2 4-5" />
+    </svg>
+  );
+}
+
+export function HandoffIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 7h10M10 3l4 4-4 4M20 17H10m4-4-4 4 4 4" />
+    </svg>
+  );
+}
+
+export function EvidenceIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M6 3h9l3 3v15H6zM15 3v4h4M9 12h6M9 16h3" />
+      <circle cx="18" cy="18" r="3" />
+      <path d="m20.2 20.2 2 2" />
+    </svg>
+  );
+}

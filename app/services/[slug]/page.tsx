@@ -408,6 +408,9 @@ export default async function ServicePage({
             {service.short} The role is built around approved sources, a defined
             preparation lane, and an accountable reviewer.
           </p>
+          <p className="service-audience">
+            <strong>Best suited for</strong> {info.audience}
+          </p>
           <Link
             id={`cta-services-${service.slug}-bookcall`}
             className="button primary"
@@ -428,18 +431,13 @@ export default async function ServicePage({
       </header>
 
       <section className="content-wrap service-detail">
-        <div className="service-overview-grid">
+        <section className="service-overview-grid" aria-labelledby="service-overview-title">
+          <p className="eyebrow">Operating problem</p>
           <div>
-            <p className="eyebrow">Audience</p>
-            <h2>Who this service is for</h2>
-            <p>{info.audience}</p>
-          </div>
-          <div>
-            <p className="eyebrow">Operating problem</p>
-            <h2>What it addresses</h2>
+            <h2 id="service-overview-title">What it addresses</h2>
             <p>{info.problem}</p>
           </div>
-        </div>
+        </section>
 
         <div className="service-detail-grid">
           <section className="service-detail-block">

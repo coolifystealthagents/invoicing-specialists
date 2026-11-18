@@ -27,12 +27,19 @@
 .contact-visual {
   position: relative;
   width: 100%;
-  height: clamp(90px, 15vh, 145px);
+  max-width: 560px;
+  height: auto;
+  aspect-ratio: 1672 / 941;
+  margin: 1rem 0 0;
   overflow: hidden;
   border-left: 5px solid #bb632f;
 }
 .contact-visual img {
-  object-position: center 58%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .review-heading {
   display: flex;
@@ -322,9 +329,6 @@
   .contact-intro h1 {
     font-size: 2.75rem;
   }
-  .contact-visual {
-    height: 120px;
-  }
   .review-heading {
     display: block;
   }
@@ -414,9 +418,6 @@
     font-size: 0.92rem;
     line-height: 1.42;
     margin: 0.45rem 0;
-  }
-  .contact-visual {
-    height: 64px;
   }
   .review-heading {
     margin: 0.5rem 0 0.2rem;

@@ -29,7 +29,7 @@ export default function ContactPage() {
         <p className="eyebrow">Invoicing staffing consultation</p>
         <h1>Turn approved records into review-ready invoices.</h1>
         <p>Map the recurring preparation, documentation, quality checks, and status work that slows your finance team. Keep pricing, judgment, approval, and release with accountable owners.</p>
-        <div className="contact-visual"><Image src={site.heroImage} alt={site.heroAlt} fill priority sizes="(max-width: 900px) 100vw, 46vw" /></div>
+        <figure className="contact-visual"><Image src="/editorial/invoicing-workflow-hero.jpg" alt="Invoice records and a review checklist organized for a controlled billing handoff" width={1672} height={941} priority sizes="(max-width: 900px) 100vw, 46vw" /></figure>
         <div className="review-heading"><strong>StealthAgents reviews</strong><span>First-party testimonials published by Stealth Agents</span></div>
         <ReviewMarquee reviews={proof.reviews} />
       </div>
