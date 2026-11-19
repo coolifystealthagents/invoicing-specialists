@@ -18,8 +18,8 @@ export const site: SiteConfig = {
   "ink": "#191513",
   "displayFont": "Baskerville",
   "bodyFont": "Avenir Next",
-  "heroImage": "/hero.png",
-  "heroAlt": "Copper invoice press sealing organized blank billing documents in a dark studio",
+  "heroImage": "/editorial/invoicing-specialists-hero.webp",
+  "heroAlt": "A finance professional checks printed billing paperwork with a calculator and pen",
   "services": [
     {
       "slug": "invoice-draft-preparation",

@@ -2996,3 +2996,10 @@ textarea::placeholder {
     font-size: 1.8rem;
   }
 }
+
+@media (max-width: 600px) {
+  .home .hero-visual {
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+  }
+}
