@@ -3003,3 +3003,17 @@ textarea::placeholder {
     aspect-ratio: 16 / 10;
   }
 }
+
+@media (max-width: 900px) {
+  .home.design-press .hero {
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+  }
+}
+
+@media (max-width: 600px) {
+  .home.design-press .hero h1 {
+    font-size: clamp(2.75rem, 11vw, 3.2rem);
+    line-height: 1.02;
+  }
+}

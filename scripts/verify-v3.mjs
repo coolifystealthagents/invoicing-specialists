@@ -54,6 +54,7 @@ const imageManifest = JSON.parse(read('content/site-optimization-assets.json'));
 const homepageHero = imageManifest.assets.find((asset) => asset.path === '/editorial/invoicing-specialists-hero.webp');
 requireMatch(homepageHero?.sourcePage === 'https://www.pexels.com/photo/a-person-examining-documents-8296970/' && homepageHero?.license === 'Pexels License', 'The homepage stock image must retain its source and license record.');
 requireMatch(layout.includes('images: [site.heroImage]') && read('app/blog/[slug]/page.tsx').includes('images: post.thumbnail ? [post.thumbnail] : [site.heroImage]') && read('app/research/[slug]/page.tsx').includes('images: post.thumbnail ? [post.thumbnail] : [site.heroImage]'), 'Homepage and fallback social images must use the current hero asset.');
+requireMatch(/@media\s*\(max-width:\s*900px\)\s*\{\s*\.home\.design-press \.hero\s*\{\s*grid-template-columns:\s*minmax\(0,\s*1fr\);/s.test(css), 'The press homepage hero must stack its copy and image at tablet and mobile widths.');
 requireMatch(contact.includes('/editorial/invoicing-workflow-hero.jpg') && contact.includes('width={1672} height={941}'), 'Contact imagery must use the sharp landscape source at its native aspect ratio.');
 requireMatch(blog.includes('className="article-heading"') && css.includes('.article-hero h1'), 'Blog detail titles must use responsive heading typography.');
 requireMatch(!/0\{index\s*\+\s*1\}/.test(contact), 'Decorative zero-padded process labels must be removed from Contact Us.');
