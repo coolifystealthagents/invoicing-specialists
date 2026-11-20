@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-11-06",
-  "generator": "OpenAI built-in image generation",
+  "generator": "OpenAI built-in image generation; third-party stock sources are recorded per asset",
   "scope": "Invoicing Specialists editorial and service heroes",
   "assets": [
     {
@@ -74,6 +74,16 @@
       "use": "/services/billing-status-reporting hero",
       "alt": "Billing queue summaries and exception records arranged for an operational status review",
       "promptSummary": "Editorial finance-operations photograph of queue summaries, exception records, and source evidence."
+    },
+    {
+      "path": "/editorial/invoicing-specialists-hero.webp",
+      "source": "https://images.pexels.com/photos/8296970/pexels-photo-8296970.jpeg?auto=compress&cs=tinysrgb&w=1800",
+      "sourcePage": "https://www.pexels.com/photo/a-person-examining-documents-8296970/",
+      "creator": "Mikhail Nilov",
+      "license": "Pexels License",
+      "dimensions": "1200x1050",
+      "use": "Homepage hero and fallback social image",
+      "alt": "A finance professional checks printed billing paperwork with a calculator and pen"
     }
   ]
 }

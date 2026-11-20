@@ -48,6 +48,12 @@ requireMatch(research.includes('post.faq?.length') && research.includes('id="fre
 requireMatch(!/service-number|method-art/.test(read('components/Marketing.tsx')), 'Decorative numbered commercial labels must be removed.');
 requireMatch(read('components/Marketing.tsx').includes('home-support-image') && read('components/Marketing.tsx').includes('closing-visual'), 'Homepage billing capacity and role-planning sections must include supporting images.');
 requireMatch(read('components/Marketing.tsx').includes('method-steps') && read('components/Icons.tsx').includes('BoundaryIcon') && read('components/Icons.tsx').includes('HandoffIcon') && read('components/Icons.tsx').includes('EvidenceIcon'), 'Homepage process items must use consistent, meaningful icons.');
+const siteConfig = read('lib/site.ts');
+requireMatch(siteConfig.includes('"heroImage": "/editorial/invoicing-specialists-hero.webp"') && fs.existsSync(path.join(root, 'public/editorial/invoicing-specialists-hero.webp')), 'The homepage hero must use the optimized local WebP invoice image.');
+const imageManifest = JSON.parse(read('content/site-optimization-assets.json'));
+const homepageHero = imageManifest.assets.find((asset) => asset.path === '/editorial/invoicing-specialists-hero.webp');
+requireMatch(homepageHero?.sourcePage === 'https://www.pexels.com/photo/a-person-examining-documents-8296970/' && homepageHero?.license === 'Pexels License', 'The homepage stock image must retain its source and license record.');
+requireMatch(layout.includes('images: [site.heroImage]') && read('app/blog/[slug]/page.tsx').includes('images: post.thumbnail ? [post.thumbnail] : [site.heroImage]') && read('app/research/[slug]/page.tsx').includes('images: post.thumbnail ? [post.thumbnail] : [site.heroImage]'), 'Homepage and fallback social images must use the current hero asset.');
 requireMatch(contact.includes('/editorial/invoicing-workflow-hero.jpg') && contact.includes('width={1672} height={941}'), 'Contact imagery must use the sharp landscape source at its native aspect ratio.');
 requireMatch(blog.includes('className="article-heading"') && css.includes('.article-hero h1'), 'Blog detail titles must use responsive heading typography.');
 requireMatch(!/0\{index\s*\+\s*1\}/.test(contact), 'Decorative zero-padded process labels must be removed from Contact Us.');
