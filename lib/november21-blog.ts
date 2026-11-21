@@ -160,86 +160,86 @@ export const november21BlogPosts: BlogPost[] = [
       }
     ],
     "internalService": "/services/invoice-processing",
-    "internalSibling": "/blog/check-a-freight-surcharge-line-against-the-carrier-rate-card",
+    "internalSibling": "/blog/track-a-carrier-detention-charge-against-the-terminal-appointment-record",
     "source": {
       "label": "GAO Green Book",
       "url": "https://www.gao.gov/products/gao-14-704g"
     }
   },
   {
-    "slug": "check-a-freight-surcharge-line-against-the-carrier-rate-card",
-    "title": "Check a freight surcharge line against the carrier rate card",
-    "description": "A practical freight surcharge check control for billing teams, with a named owner, dated evidence, and a reviewable close in the billing platform.",
+    "slug": "track-a-carrier-detention-charge-against-the-terminal-appointment-record",
+    "title": "Track a carrier detention charge against the terminal appointment record",
+    "description": "A practical detention charge check control for billing teams, with a named owner, dated evidence, and a reviewable close in the billing platform.",
     "category": "Freight billing",
     "publishedAt": "2026-11-21",
     "readTime": "9 min read",
-    "thumbnail": "/thumbnails/november-21/check-a-freight-surcharge-line-against-the-carrier-rate-card.webp",
+    "thumbnail": "/thumbnails/november-21/track-a-carrier-detention-charge-against-the-terminal-appointment-record.webp",
     "sections": [
       {
         "heading": "Name the decision and the queue owner",
         "paragraphs": [
-          "For freight surcharge check, the first step is to write the open decision, the requesting role, and the queue owner before anyone touches the billing platform. The next reviewer should not have to ask which document is authoritative. Record the queue and the entity so the case cannot drift into another team's work. Write the decision in one sentence so the reviewer knows what would count as an answer. For freight surcharge check, the working file keeps carrier rate card and shipment weight beside the decision note. Invoicing Specialists keeps the freight surcharge check source, reviewer, and decision date together in the billing platform so a later check does not depend on memory.",
-          "Give the case a stable identifier before any document is attached. The next reviewer should not have to ask which document is authoritative. Do not let a deadline expand a role beyond its written limit. Keep the original request so a later correction does not erase the reason for the work. Every freight surcharge check handoff names the billing manager and the field in the billing platform that will confirm the change. Invoicing Specialists keeps the freight surcharge check source, reviewer, and decision date together in the billing platform so a later check does not depend on memory."
+          "Start detention charge check with one bounded case, a named owner, and a written statement of what the reviewer is being asked to decide. Name the owner for every open item, including items waiting on someone else. Say which system of record governs if two sources disagree. Do not let a deadline expand a role beyond its written limit. The detention charge check case note should show what the billing platform held at the time and who reviewed it. Invoicing Specialists keeps the detention charge check source, reviewer, and decision date together in the billing platform so a later check does not depend on memory.",
+          "Record the requester and the promised response time. Separate the request from the decision, because a complete request is not an approval. Distinguish a new request from a correction to an earlier one. Give the case a stable identifier before any document is attached. For detention charge check, compare appointment record with the destination value rather than relying on a status label. Invoicing Specialists keeps the detention charge check source, reviewer, and decision date together in the billing platform so a later check does not depend on memory."
         ]
       },
       {
         "heading": "Map the source and the evidence trail",
         "paragraphs": [
-          "Map each freight surcharge check value to its source: carrier rate card for the request, shipment weight for the check, and the billing platform for the surviving destination value. Do not let a deadline expand a role beyond its written limit. Preserve a conflicting value instead of overwriting the first one. A case that moves between owners should keep both owner periods visible. A freight surcharge check exception keeps reviewer note attached and routes the question to the billing manager. For this freight surcharge check case, Invoicing Specialists asks the billing specialist to write the open question and the named approver before the invoice moves.",
-          "A short written rule is easier to test than an unwritten habit. Compare the source and the destination values before drawing a conclusion. Use the same case key in the queue and in the evidence extract. Do not let a deadline expand a role beyond its written limit. In this freight surcharge check case, the record points to the billing platform and names the billing manager as the decision owner. For this freight surcharge check case, Invoicing Specialists asks the billing specialist to write the open question and the named approver before the invoice moves."
+          "The evidence set for detention charge check should join appointment record, gate-in time, detention line, and reviewer note on one stable case reference. Mark missing evidence as missing, with a reason, rather than leaving a blank. Keep the original document and the working copy in separate states. The record should show the source, the decision, and the surviving value in one place. In the detention charge check queue, an item without a next action is treated as an exception. For this detention charge check case, Invoicing Specialists asks the billing specialist to write the open question and the named approver before the invoice moves.",
+          "Mark missing evidence as missing, with a reason, rather than leaving a blank. Name the repository where sensitive evidence is held. The next reviewer should not have to ask which document is authoritative. Link each value to the field or page that supports it. For detention charge check, the working file keeps appointment record and gate-in time beside the decision note. For this detention charge check case, Invoicing Specialists asks the billing specialist to write the open question and the named approver before the invoice moves."
         ]
       },
       {
         "heading": "Set the authority boundary",
         "paragraphs": [
-          "When freight surcharge check changes a record in the billing platform, the the billing manager approves and the preparer records the action; the two roles stay separate. When urgency presses against the limit, pause and route the decision. If the team cannot reproduce the result from the record, the control is not finished. The next reviewer should not have to ask which document is authoritative. Apply the same freight surcharge check test to surcharge line and to the value that survives in the billing platform. The Invoicing Specialists review ties each freight surcharge check correction to the original invoice in the billing platform instead of replacing it.",
-          "When urgency presses against the limit, pause and route the decision. A short written rule is easier to test than an unwritten habit. The next reviewer should not have to ask which document is authoritative. If two roles share a queue, mark which one decides each item. The freight surcharge check record should let a second reviewer rebuild the decision from shipment weight and surcharge line. The Invoicing Specialists review ties each freight surcharge check correction to the original invoice in the billing platform instead of replacing it."
+          "A standing instruction for detention charge check needs a limit and an expiry, and the the billing manager should confirm it is still current. A case that moves between owners should keep both owner periods visible. Write the authority limit into the case template. The record should show the source, the decision, and the surviving value in one place. The detention charge check reviewer records reviewer note, the owner, and the next action in one place. The Invoicing Specialists review ties each detention charge check correction to the original invoice in the billing platform instead of replacing it.",
+          "A delegation needs a scope, a limit, an end date, and a named backup. Keep emergency authority narrow and followed by a review note. The next reviewer should not have to ask which document is authoritative. If the team cannot reproduce the result from the record, the control is not finished. A detention charge check exception keeps reviewer note attached and routes the question to the billing manager. The Invoicing Specialists review ties each detention charge check correction to the original invoice in the billing platform instead of replacing it."
         ]
       },
       {
         "heading": "Run the daily handoff",
         "paragraphs": [
-          "Each morning the team reviews freight surcharge check arrivals, items waiting on the the billing manager, and items ready for a verified close. The record should show the source, the decision, and the surviving value in one place. A handoff is complete only when the receiver acknowledges it. Keep the queue view readable on one screen. The freight surcharge check close note cites the billing platform, the approver, and the time of the final check. Invoicing Specialists treats a missing carrier rate card as an open item, not as a passed check.",
-          "Do not let a status update stand in for a verified event. A case that moves between owners should keep both owner periods visible. If the team cannot reproduce the result from the record, the control is not finished. Do not let a deadline expand a role beyond its written limit. The freight surcharge check case note should show what the billing platform held at the time and who reviewed it. Invoicing Specialists treats a missing carrier rate card as an open item, not as a passed check."
+          "A detention charge check status update should point to a verifiable event in the billing platform, not to a feeling about progress. The record should show the source, the decision, and the surviving value in one place. A case with no next action is an exception even if it says in progress. Record one next action and one due time per open item. A sample detention charge check review checks appointment record, gate-in time, and the surviving value in the billing platform. Invoicing Specialists treats a missing appointment record as an open item, not as a passed check.",
+          "Assign every unowned case before new work begins. A case that moves between owners should keep both owner periods visible. Do not let a deadline expand a role beyond its written limit. Open the day with a queue pass by age, owner, and missing evidence. Apply the same detention charge check test to detention line and to the value that survives in the billing platform. Invoicing Specialists treats a missing appointment record as an open item, not as a passed check."
         ]
       },
       {
         "heading": "Handle exceptions without rewriting history",
         "paragraphs": [
-          "When the surcharge exceeds the published rate card, preserve both versions, record the observation times, and route one answerable question to the the billing manager. The next reviewer should not have to ask which document is authoritative. If the exception repeats, give it a reason code. Record who released the dependent action and when. Every freight surcharge check handoff names the billing manager and the field in the billing platform that will confirm the change. A freight surcharge check handoff at Invoicing Specialists ends only when the next reviewer can act from the written record.",
-          "If the team cannot reproduce the result from the record, the control is not finished. Separate a data conflict from a policy conflict. Name the owner for every open item, including items waiting on someone else. Do not rewrite the earlier record to match the later answer. In the freight surcharge check queue, an item without a next action is treated as an exception. A freight surcharge check handoff at Invoicing Specialists ends only when the next reviewer can act from the written record."
+          "The detention charge check exception record should name the condition, the decision, the releaser, and the time the dependent action resumed. An escalation that ends in silence remains open. Keep the original request so a later correction does not erase the reason for the work. Name the owner for every open item, including items waiting on someone else. For detention charge check, compare appointment record with the destination value rather than relying on a status label. A detention charge check handoff at Invoicing Specialists ends only when the next reviewer can act from the written record.",
+          "Preserve both values and the time each was observed. Record the stop reason and the release decision together. The next reviewer should not have to ask which document is authoritative. Check whether the exception came from a form, a rule, or a permission. The detention charge check close note cites the billing platform, the approver, and the time of the final check. A detention charge check handoff at Invoicing Specialists ends only when the next reviewer can act from the written record."
         ]
       },
       {
         "heading": "Close with a verified destination value",
         "paragraphs": [
-          "Record the freight surcharge check close reason, the approver, and the surviving evidence reference in the same case note. Test one closed case by rebuilding it from the evidence map. If the destination is another team, require an acknowledgment. Record the approximate value, the approver, and the final check time. In this freight surcharge check case, the record points to the billing platform and names the billing manager as the decision owner. At Invoicing Specialists, the freight surcharge check queue marks a held invoice with the reason it stopped and the person who can release it.",
-          "Name the owner for every open item, including items waiting on someone else. Do not let a deadline expand a role beyond its written limit. The record should show the source, the decision, and the surviving value in one place. A short written rule is easier to test than an unwritten habit. The freight surcharge check reviewer records reviewer note, the owner, and the next action in one place. At Invoicing Specialists, the freight surcharge check queue marks a held invoice with the reason it stopped and the person who can release it."
+          "Close detention charge check only when the destination value in the billing platform, the approver, and the time of the final check are all visible. A short written rule is easier to test than an unwritten habit. Verify that the surviving record is the one downstream teams will use. Do not let a deadline expand a role beyond its written limit. For detention charge check, the working file keeps appointment record and gate-in time beside the decision note. At Invoicing Specialists, the detention charge check queue marks a held invoice with the reason it stopped and the person who can release it.",
+          "Reopen the case when the destination value is disputed. Record the close reason with the same codes used in the exception queue. The record should show the source, the decision, and the surviving value in one place. Record the approximate value, the approver, and the final check time. Every detention charge check handoff names the billing manager and the field in the billing platform that will confirm the change. At Invoicing Specialists, the detention charge check queue marks a held invoice with the reason it stopped and the person who can release it."
         ]
       },
       {
         "heading": "Review the pattern, not only the case",
         "paragraphs": [
-          "Report freight surcharge check open cases by age and dependency, not only the total, because a stable total can hide an aging tail. Include a routine case, a reopened case, and a cross-owner handoff. Check whether the definition changed during the period. Separate what was observed from what the team believes caused it. The freight surcharge check record should let a second reviewer rebuild the decision from shipment weight and surcharge line. Invoicing Specialists keeps the freight surcharge check source, reviewer, and decision date together in the billing platform so a later check does not depend on memory.",
-          "Use case-level review to explain an outlier before calling it a trend. A short written rule is easier to test than an unwritten habit. Choose the sample from the export before the meeting. Record the sample frame, the reviewer, and the criteria. A sample freight surcharge check review checks carrier rate card, shipment weight, and the surviving value in the billing platform. Invoicing Specialists keeps the freight surcharge check source, reviewer, and decision date together in the billing platform so a later check does not depend on memory."
+          "A useful detention charge check review ends with one testable change, one owner, and a date to measure whether the change moved the result. Separate what was observed from what the team believes caused it. A case that moves between owners should keep both owner periods visible. The next reviewer should not have to ask which document is authoritative. A detention charge check exception keeps reviewer note attached and routes the question to the billing manager. Invoicing Specialists keeps the detention charge check source, reviewer, and decision date together in the billing platform so a later check does not depend on memory.",
+          "Choose the sample from the export before the meeting. Use the same definition across the queue and the review so the counts agree. Name the owner for every open item, including items waiting on someone else. Report a null result as clearly as a positive one. In this detention charge check case, the record points to the billing platform and names the billing manager as the decision owner. Invoicing Specialists keeps the detention charge check source, reviewer, and decision date together in the billing platform so a later check does not depend on memory."
         ]
       },
       {
         "heading": "Keep the record ready for the next reviewer",
         "paragraphs": [
-          "The freight surcharge check working paper should show the request, the source, the decision, the action, and the surviving value without a private inbox. Keep the note short enough to read with the case. Keep the source reference and the coded value in the same row. Link the evidence to the exact field it supports. The freight surcharge check case note should show what the billing platform held at the time and who reviewed it. For this freight surcharge check case, Invoicing Specialists asks the billing specialist to write the open question and the named approver before the invoice moves.",
-          "Avoid a private second version in a personal document. Keep the original request so a later correction does not erase the reason for the work. The record should show the source, the decision, and the surviving value in one place. A case that moves between owners should keep both owner periods visible. For freight surcharge check, compare carrier rate card with the destination value rather than relying on a status label. For this freight surcharge check case, Invoicing Specialists asks the billing specialist to write the open question and the named approver before the invoice moves."
+          "Label appointment record and gate-in time with their versions so a later reviewer can tell a stale extract from a current one. A case that moves between owners should keep both owner periods visible. Avoid a private second version in a personal document. Keep the source reference and the coded value in the same row. Apply the same detention charge check test to detention line and to the value that survives in the billing platform. For this detention charge check case, Invoicing Specialists asks the billing specialist to write the open question and the named approver before the invoice moves.",
+          "Avoid a private second version in a personal document. A short written rule is easier to test than an unwritten habit. Record event time separately from entry time. Make the handoff readable by the next shift and the next auditor. The detention charge check record should let a second reviewer rebuild the decision from gate-in time and detention line. For this detention charge check case, Invoicing Specialists asks the billing specialist to write the open question and the named approver before the invoice moves."
         ]
       }
     ],
     "faq": [
       {
-        "q": "Who owns a freight surcharge check decision?",
+        "q": "Who owns a detention charge check decision?",
         "a": "The billing manager owns acceptance; the billing specialist prepares the evidence and routes the exception."
       },
       {
-        "q": "What closes a freight surcharge check item?",
-        "a": "A named owner, the source record, the decision, and the corrected surcharge and rate note."
+        "q": "What closes a detention charge check item?",
+        "a": "A named owner, the source record, the decision, and the corrected detention line and appointment note."
       }
     ],
     "internalService": "/services/invoice-processing",
