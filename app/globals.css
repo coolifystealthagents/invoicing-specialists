@@ -1535,6 +1535,9 @@ summary:focus-visible {
     border-radius: 14px;
     box-shadow: 0 8px 24px color-mix(in srgb, var(--ink) 10%, transparent);
   }
+  .mobile-toc.is-open {
+    position: static;
+  }
   .mobile-toc-toggle {
     width: 100%;
     display: flex;

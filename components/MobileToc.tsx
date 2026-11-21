@@ -8,7 +8,7 @@ export function MobileToc({ items }: { items: TocItem[] }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="mobile-toc" aria-label="Article contents">
+    <div className={`mobile-toc${open ? ' is-open' : ''}`} aria-label="Article contents">
       <button
         type="button"
         className="mobile-toc-toggle"
