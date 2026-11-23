@@ -9,7 +9,7 @@ export const site: SiteConfig = {
   "eyebrow": "Invoice operations, pressed into order",
   "hero": "Turn source records into",
   "heroAccent": "review-ready invoices.",
-  "heroBody": "Specialist remote assistants prepare invoice records, organize supporting detail, maintain billing schedules, and document exceptions while accountable finance leaders retain approval.",
+  "heroBody": "Invoicing specialists help controllers, finance leaders, and business owners keep recurring billing work moving by preparing invoice drafts, organizing supporting records, maintaining billing schedules, checking required fields, updating approved customer details, and documenting exceptions. On a discovery call, we can discuss your current queue, source systems, review points, decision boundaries, and the first handoff worth defining while your finance team retains approval and release authority.",
   "manifesto": "Every invoice should carry a clean source trail, a clear reviewer, and a visible next action.",
   "primary": "#bb632f",
   "secondary": "#d6a071",
@@ -18,8 +18,8 @@ export const site: SiteConfig = {
   "ink": "#191513",
   "displayFont": "Baskerville",
   "bodyFont": "Avenir Next",
-  "heroImage": "/editorial/invoicing-specialists-hero.webp",
-  "heroAlt": "A finance professional checks printed billing paperwork with a calculator and pen",
+  "heroImage": "/editorial/photography/homepage-invoice-queue.jpg",
+  "heroAlt": "A finance professional reviews an invoicing queue at a laptop in a naturally lit office",
   "services": [
     {
       "slug": "invoice-draft-preparation",

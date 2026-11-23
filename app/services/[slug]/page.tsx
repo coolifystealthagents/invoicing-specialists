@@ -4,6 +4,11 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { site } from "@/lib/site";
 import { serviceBySlug } from "@/lib/content";
+import {
+  AccountableReviewIcon,
+  PreparationIcon,
+  SourceRecordsIcon,
+} from "@/components/Icons";
 
 type ServiceDetail = {
   image: string;
@@ -21,8 +26,8 @@ type ServiceDetail = {
 
 const detail: Record<string, ServiceDetail> = {
   "invoice-draft-preparation": {
-    image: "/editorial/services/invoice-draft-preparation.jpg",
-    alt: "Approved invoice source records, a prepared draft, and a completed review checklist",
+    image: "/editorial/photography/invoice-draft-preparation.jpg",
+    alt: "A professional prepares financial records beside a laptop",
     audience:
       "Finance teams with recurring, milestone, usage, or project billing that depends on approved source records.",
     problem:
@@ -78,8 +83,8 @@ const detail: Record<string, ServiceDetail> = {
     ],
   },
   "billing-schedule-support": {
-    image: "/editorial/services/billing-schedule-support.jpg",
-    alt: "Billing calendar, milestone timeline, and organized invoice schedule queue",
+    image: "/editorial/photography/billing-schedule-support.jpg",
+    alt: "A professional checks a billing schedule with a laptop and calculator",
     audience:
       "Teams managing recurring, milestone, renewal, or project billing dates across many customers.",
     problem:
@@ -135,8 +140,8 @@ const detail: Record<string, ServiceDetail> = {
     ],
   },
   "supporting-documentation": {
-    image: "/editorial/services/supporting-documentation.jpg",
-    alt: "Indexed supporting records assembled with a billing evidence checklist",
+    image: "/editorial/photography/supporting-documentation.jpg",
+    alt: "A professional organizes supporting documents at a desk",
     audience:
       "Organizations whose invoices require purchase orders, time records, delivery proof, milestone acceptance, or customer-specific attachments.",
     problem:
@@ -192,8 +197,8 @@ const detail: Record<string, ServiceDetail> = {
     ],
   },
   "invoice-quality-review": {
-    image: "/editorial/services/invoice-quality-review.jpg",
-    alt: "Invoice packet and quality checklist arranged for a controlled preapproval review",
+    image: "/editorial/photography/invoice-quality-review.jpg",
+    alt: "Colleagues review business records together in a meeting room",
     audience:
       "Finance teams that need a consistent preparation check before an authorized reviewer approves and releases an invoice.",
     problem:
@@ -249,8 +254,8 @@ const detail: Record<string, ServiceDetail> = {
     ],
   },
   "customer-billing-records": {
-    image: "/editorial/services/customer-billing-records.jpg",
-    alt: "Customer billing change records prepared for authorization and provenance review",
+    image: "/editorial/photography/customer-billing-records.jpg",
+    alt: "Two professionals reconcile customer records on a laptop",
     audience:
       "Teams maintaining customer contacts, purchase-order references, delivery preferences, and other approved billing fields.",
     problem:
@@ -306,8 +311,8 @@ const detail: Record<string, ServiceDetail> = {
     ],
   },
   "billing-status-reporting": {
-    image: "/editorial/services/billing-status-reporting.jpg",
-    alt: "Billing queue summaries and exception records arranged for an operational status review",
+    image: "/editorial/photography/billing-status-reporting.jpg",
+    alt: "A professional reviews operational status charts on a laptop",
     audience:
       "Controllers and billing managers who need a reliable view of drafts, review, approval, release, and exceptions.",
     problem:
@@ -397,6 +402,7 @@ export default async function ServicePage({
   const related = site.services
     .filter((item) => item.slug !== slug)
     .slice(0, 3);
+  const workflowIcons = [SourceRecordsIcon, PreparationIcon, AccountableReviewIcon];
 
   return (
     <main className="service-detail-page">
@@ -419,7 +425,7 @@ export default async function ServicePage({
             Discuss this role
           </Link>
         </div>
-        <div className="service-hero-image">
+        <div className={`service-hero-image service-hero-image-${slug}`}>
           <Image
             src={info.image}
             alt={info.alt}
@@ -473,12 +479,18 @@ export default async function ServicePage({
           <p className="eyebrow">Workflow</p>
           <h2 id="workflow-title">A controlled path from intake to review</h2>
           <ol>
-            {info.workflow.map(([title, copy]) => (
-              <li key={title}>
-                <span>{title}</span>
-                <p>{copy}</p>
-              </li>
-            ))}
+            {info.workflow.map(([title, copy], index) => {
+              const WorkflowIcon = workflowIcons[index];
+              return (
+                <li key={title}>
+                  <span className="workflow-step-icon" aria-hidden="true"><WorkflowIcon /></span>
+                  <div>
+                    <span className="workflow-step-title">{title}</span>
+                    <p>{copy}</p>
+                  </div>
+                </li>
+              );
+            })}
           </ol>
         </section>
 

@@ -103,8 +103,8 @@ export default function ServicesPage() {
         </div>
         <figure className="services-index-visual">
           <Image
-            src="/editorial/services-invoicing-workflow-hero.jpg"
-            alt="Approved invoice source records, a review checklist, and an organized billing packet arranged as a controlled workflow"
+            src="/editorial/photography/services-team.jpg"
+            alt="A workplace team collaborates around laptops and shared records"
             fill
             priority
             sizes="(max-width: 900px) 100vw, 48vw"
@@ -286,15 +286,25 @@ export default function ServicesPage() {
       </section>
 
       <section className="closing services-final-cta">
-        <p className="eyebrow">Start with a real queue</p>
-        <h2>Turn one recurring invoicing handoff into a clear role.</h2>
-        <p>
-          Bring the trigger, sources, expected output, reviewer, and common
-          exceptions. We will use them to identify the best starting service.
-        </p>
-        <Link className="button primary" href="/contact-us">
-          Plan a free consultation
-        </Link>
+        <div className="closing-copy">
+          <p className="eyebrow">Start with a real queue</p>
+          <h2>Turn one recurring invoicing handoff into a clear role.</h2>
+          <p>
+            Bring the trigger, sources, expected output, reviewer, and common
+            exceptions. We will use them to identify the best starting service.
+          </p>
+          <Link className="button primary" href="/contact-us">
+            Plan a free consultation
+          </Link>
+        </div>
+        <figure className="closing-visual">
+          <Image
+            src="/editorial/photography/workflow-handoff.jpg"
+            alt="Two colleagues review a recurring work handoff together"
+            fill
+            sizes="(max-width: 600px) 86vw, (max-width: 900px) 38vw, 34vw"
+          />
+        </figure>
       </section>
     </main>
   );

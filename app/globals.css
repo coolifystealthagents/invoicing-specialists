@@ -3020,3 +3020,224 @@ textarea::placeholder {
     line-height: 1.02;
   }
 }
+
+/* Photography-led layout: shared templates remain authoritative across route families. */
+.home .hero-copy {
+  min-width: 0;
+}
+.home .hero-body {
+  max-width: 66ch;
+}
+.home .hero-visual img {
+  object-position: 48% center;
+}
+.method-copy {
+  min-width: 0;
+}
+.method-copy > p:not(.eyebrow) {
+  max-width: 62ch;
+}
+.method-photo {
+  position: relative;
+  min-width: 0;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #d6a071;
+  box-shadow: 14px 14px 0 #bb632f;
+  background: #ead8c7;
+}
+.method-photo img {
+  object-fit: cover;
+  object-position: center;
+}
+.services-index-visual img {
+  object-position: center 46%;
+}
+.services-final-cta {
+  grid-template-columns: minmax(0, 1.08fr) minmax(300px, 0.92fr);
+}
+.services-final-cta .closing-visual img {
+  object-position: center 42%;
+}
+
+.service-detail {
+  width: min(1240px, 100%);
+  max-width: 1240px;
+  margin-inline: auto;
+}
+.service-detail-page .service-hero,
+.article-hero {
+  padding-inline: max(4vw, calc((100vw - 1280px) / 2));
+}
+.service-overview-grid,
+.service-detail-grid,
+.service-workflow,
+.service-quality,
+.service-starting-scenarios,
+.service-detail-faq,
+.service-related,
+.service-detail .service-final-cta {
+  width: 100%;
+  max-width: 1160px;
+  margin-inline: auto;
+}
+.service-detail-page .service-hero-image img {
+  object-position: center;
+}
+.service-hero-image-invoice-draft-preparation img {
+  object-position: center 48%;
+}
+.service-hero-image-billing-schedule-support img {
+  object-position: center 58%;
+}
+.service-hero-image-supporting-documentation img {
+  object-position: center 54%;
+}
+.service-hero-image-invoice-quality-review img {
+  object-position: center 45%;
+}
+.service-hero-image-customer-billing-records img {
+  object-position: center 42%;
+}
+.service-hero-image-billing-status-reporting img {
+  object-position: center 52%;
+}
+.service-workflow li {
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+  counter-increment: none;
+}
+.service-workflow li:before {
+  content: none;
+}
+.service-workflow li > .workflow-step-icon {
+  display: grid;
+  width: 3rem;
+  height: 3rem;
+  place-items: center;
+  margin: 0;
+  border: 1px solid #bb632f;
+  border-radius: 50%;
+  background: #f1d6a8;
+  color: #6f3218;
+  font-family: inherit;
+  font-size: 1rem;
+}
+.service-workflow .workflow-step-icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.service-workflow li .workflow-step-title {
+  display: block;
+  font-family: var(--display);
+  font-size: 1.55rem;
+  line-height: 1.1;
+}
+.service-workflow li p {
+  margin-bottom: 0;
+}
+
+.article-layout {
+  width: min(1100px, 100%);
+  margin-inline: auto;
+  grid-template-columns: minmax(0, 720px) minmax(230px, 280px);
+  justify-content: center;
+}
+.article-layout > div:first-child,
+.article-prose {
+  width: 100%;
+  max-width: 720px;
+  margin-inline: auto;
+}
+.article-related {
+  grid-column: 1;
+}
+@media (min-width: 1200px) {
+  .article-layout {
+    width: min(1400px, 100%);
+    position: relative;
+    grid-template-columns: minmax(0, 720px);
+  }
+  .article-sidebar {
+    position: absolute;
+    top: 0;
+    left: calc(50% + 392px);
+    width: min(280px, calc(50% - 410px));
+  }
+}
+@media (min-width: 901px) {
+  .home .hero {
+    height: auto;
+    min-height: calc(100svh - 72px);
+  }
+  .home .hero-visual {
+    height: min(680px, calc(100svh - 120px));
+    min-height: 560px;
+  }
+}
+@media (max-width: 900px) {
+  .method {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .method-copy {
+    order: 1;
+  }
+  .method-photo {
+    order: 2;
+    aspect-ratio: 16 / 10;
+    box-shadow: 9px 9px 0 #bb632f;
+  }
+  .services-final-cta {
+    grid-template-columns: minmax(0, 1fr) minmax(230px, 0.8fr);
+  }
+  .article-layout {
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .article-related {
+    grid-column: auto;
+  }
+}
+@media (max-width: 600px) {
+  .home .hero-body {
+    font-size: 1rem;
+    line-height: 1.58;
+  }
+  .home .hero-visual img {
+    object-position: 46% center;
+  }
+  .intro-content,
+  .services-final-cta {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .intro-copy,
+  .services-final-cta .closing-copy {
+    order: 1;
+  }
+  .home-support-image,
+  .services-final-cta .closing-visual {
+    order: 2;
+  }
+  .services-index-visual img {
+    object-position: 48% center;
+  }
+  .service-detail-page .service-hero-image img {
+    object-position: center;
+  }
+  .service-hero-image-invoice-quality-review img,
+  .service-hero-image-customer-billing-records img {
+    object-position: center 38%;
+  }
+  .service-workflow li {
+    grid-template-columns: 2.75rem minmax(0, 1fr);
+    padding: 1.35rem;
+  }
+  .service-workflow li > .workflow-step-icon {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+}

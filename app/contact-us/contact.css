@@ -24,6 +24,25 @@
   line-height: 1.55;
   margin: 0.8rem 0;
 }
+.contact-inline-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.25rem;
+  margin: 0.55rem 0 0;
+  padding: 0.8rem 1.2rem;
+  border-radius: 999px;
+  background: #9c431c;
+  color: #fff;
+  font-size: 0.92rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+.contact-inline-cta:hover,
+.contact-inline-cta:focus-visible {
+  background: #7f3517;
+  color: #fff;
+}
 .contact-visual {
   position: relative;
   width: 100%;
@@ -456,3 +475,63 @@
   }
 }
 .review-marquee.is-paused .review-track{animation-play-state:paused}
+
+/* Natural consultation photography and intrinsic-size official team image. */
+.contact-visual {
+  aspect-ratio: 3 / 2;
+}
+.contact-visual img {
+  object-position: center 44%;
+}
+.parent-proof {
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  min-height: 600px;
+  align-items: center;
+}
+.parent-proof-image {
+  width: min(560px, 88%);
+  min-height: 0;
+  aspect-ratio: 953 / 540;
+  margin: 0;
+  justify-self: center;
+  overflow: hidden;
+  background: #d4c0ae;
+  border: 1px solid #aa9888;
+}
+.parent-proof-image img {
+  object-fit: contain;
+  object-position: center;
+}
+.parent-proof-image figcaption {
+  position: absolute;
+  inset: auto 0.75rem 0.75rem;
+  width: max-content;
+  max-width: calc(100% - 1.5rem);
+  padding: 0.45rem 0.65rem;
+  background: rgba(25, 21, 19, 0.9);
+  color: #fff;
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+@media (max-width: 900px) {
+  .parent-proof {
+    grid-template-columns: minmax(0, 1fr);
+    padding-top: 4rem;
+  }
+  .parent-proof-image {
+    width: min(560px, 90vw);
+    min-height: 0;
+  }
+}
+@media (max-width: 600px) {
+  .contact-visual {
+    aspect-ratio: 4 / 3;
+  }
+  .contact-visual img {
+    object-position: 53% center;
+  }
+  .parent-proof-image {
+    min-height: 0;
+    width: 90vw;
+  }
+}

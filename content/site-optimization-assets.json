@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-06",
-  "generator": "OpenAI built-in image generation; third-party stock sources are recorded per asset",
+  "generatedAt": "2026-11-23",
+  "generator": "Existing generated editorial assets; approved third-party photography is recorded per asset",
   "scope": "Invoicing Specialists editorial and service heroes",
   "assets": [
     {
@@ -76,14 +76,114 @@
       "promptSummary": "Editorial finance-operations photograph of queue summaries, exception records, and source evidence."
     },
     {
-      "path": "/editorial/invoicing-specialists-hero.webp",
-      "source": "https://images.pexels.com/photos/8296970/pexels-photo-8296970.jpeg?auto=compress&cs=tinysrgb&w=1800",
-      "sourcePage": "https://www.pexels.com/photo/a-person-examining-documents-8296970/",
-      "creator": "Mikhail Nilov",
-      "license": "Pexels License",
-      "dimensions": "1200x1050",
+      "path": "/editorial/photography/homepage-invoice-queue.jpg",
+      "sourcePage": "https://unsplash.com/photos/W3Jl3jREpDY",
+      "creator": "LinkedIn Sales Solutions",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "dimensions": "1800x1200",
       "use": "Homepage hero and fallback social image",
-      "alt": "A finance professional checks printed billing paperwork with a calculator and pen"
+      "alt": "A finance professional reviews an invoicing queue at a laptop in a naturally lit office"
+    },
+    {
+      "path": "/editorial/photography/homepage-billing-capacity.jpg",
+      "sourcePage": "https://unsplash.com/photos/wD1LRb9OeEo",
+      "creator": "Austin Distel",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "dimensions": "1800x1350",
+      "use": "Homepage billing capacity",
+      "alt": "A finance team works together at laptops in a bright office"
+    },
+    {
+      "path": "/editorial/photography/workflow-handoff.jpg",
+      "sourcePage": "https://unsplash.com/photos/5QgIuuBxKwM",
+      "creator": "Headway",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "dimensions": "1800x1200",
+      "use": "Homepage method and Services handoff CTA",
+      "alt": "Two colleagues discuss a documented workflow handoff at a table"
+    },
+    {
+      "path": "/editorial/photography/services-team.jpg",
+      "sourcePage": "https://unsplash.com/photos/QckxruozjRg",
+      "creator": "Annie Spratt",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "dimensions": "1800x1201",
+      "use": "Services index hero",
+      "alt": "A workplace team collaborates around laptops and shared records"
+    },
+    {
+      "path": "/editorial/photography/invoice-draft-preparation.jpg",
+      "sourcePage": "https://unsplash.com/photos/5fNmWej4tAA",
+      "creator": "Scott Graham",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "dimensions": "1800x1201",
+      "use": "Invoice draft preparation hero",
+      "alt": "A professional prepares financial records beside a laptop"
+    },
+    {
+      "path": "/editorial/photography/billing-schedule-support.jpg",
+      "sourcePage": "https://unsplash.com/photos/nApaSgkzaxg",
+      "creator": "Towfiqu barbhuiya",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "dimensions": "1800x1201",
+      "use": "Billing schedule support hero",
+      "alt": "A professional checks a billing schedule with a laptop and calculator"
+    },
+    {
+      "path": "/editorial/photography/supporting-documentation.jpg",
+      "sourcePage": "https://unsplash.com/photos/M98NRBuzbpc",
+      "creator": "Kelly Sikkema",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "dimensions": "1800x1265",
+      "use": "Supporting documentation hero",
+      "alt": "A professional organizes supporting documents at a desk"
+    },
+    {
+      "path": "/editorial/photography/invoice-quality-review.jpg",
+      "sourcePage": "https://unsplash.com/photos/pypeCEaJeZY",
+      "creator": "Campaign Creators",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "dimensions": "1800x1303",
+      "use": "Invoice quality review hero",
+      "alt": "Colleagues review business records together in a meeting room"
+    },
+    {
+      "path": "/editorial/photography/customer-billing-records.jpg",
+      "sourcePage": "https://unsplash.com/photos/rCyiK4_aaWw",
+      "creator": "Christina Morillo / WOCinTech Chat",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "dimensions": "1800x1202",
+      "use": "Customer billing records hero",
+      "alt": "Two professionals reconcile customer records on a laptop"
+    },
+    {
+      "path": "/editorial/photography/billing-status-reporting.jpg",
+      "sourcePage": "https://unsplash.com/photos/hpjSkU2UYSU",
+      "creator": "Carlos Muza",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "dimensions": "1800x1282",
+      "use": "Billing status reporting hero",
+      "alt": "A professional reviews operational status charts on a laptop"
+    },
+    {
+      "path": "/editorial/photography/contact-consultation.jpg",
+      "sourcePage": "https://unsplash.com/photos/JaoVGh5aJ3E",
+      "creator": "Amy Hirschi",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "dimensions": "1800x1200",
+      "use": "Contact Us hero",
+      "alt": "Two professionals discuss an invoicing workflow during a consultation"
     }
   ]
 }
