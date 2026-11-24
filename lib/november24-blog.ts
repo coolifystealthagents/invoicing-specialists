@@ -3,7 +3,7 @@ export const november24BlogPosts: BlogPost[] = [
   {
     "slug": "reconcile-a-customer-retainer-against-the-invoice-drawdown",
     "title": "Reconcile a customer retainer against the invoice drawdown",
-    "description": "A practical retainer reconciliation control for billing teams, with a named owner, dated evidence, and a reviewable close in the accounts receivable ledger.",
+    "description": "A practical retainer reconciliation control for the invoice queue, naming the ledger evidence, the deciding reviewer, and the closing record in the accounts receivable ledger.",
     "category": "Credit control",
     "publishedAt": "2026-11-24",
     "readTime": "9 min read",
@@ -86,7 +86,7 @@ export const november24BlogPosts: BlogPost[] = [
   {
     "slug": "review-a-late-fee-assessment-against-the-contract-terms",
     "title": "Review a late fee assessment against the contract terms",
-    "description": "A practical late fee review control for billing teams, with a named owner, dated evidence, and a reviewable close in the billing system.",
+    "description": "A practical late fee review control for the invoice queue, naming the ledger evidence, the deciding reviewer, and the closing record in the billing system.",
     "category": "Credit control",
     "publishedAt": "2026-11-24",
     "readTime": "9 min read",
@@ -169,7 +169,7 @@ export const november24BlogPosts: BlogPost[] = [
   {
     "slug": "check-a-multi-currency-payment-against-the-settlement-rate",
     "title": "Check a multi-currency payment against the settlement rate",
-    "description": "A practical settlement rate check control for billing teams, with a named owner, dated evidence, and a reviewable close in the billing system.",
+    "description": "A practical settlement rate check control for the invoice queue, naming the ledger evidence, the deciding reviewer, and the closing record in the billing system.",
     "category": "Billing operations",
     "publishedAt": "2026-11-24",
     "readTime": "9 min read",
@@ -252,7 +252,7 @@ export const november24BlogPosts: BlogPost[] = [
   {
     "slug": "set-a-write-off-approval-before-the-aging-close",
     "title": "Set a write-off approval before the aging close",
-    "description": "A practical write-off approval control for billing teams, with a named owner, dated evidence, and a reviewable close in the collections queue.",
+    "description": "A practical write-off approval control for the invoice queue, naming the ledger evidence, the deciding reviewer, and the closing record in the collections queue.",
     "category": "Collections",
     "publishedAt": "2026-11-24",
     "readTime": "9 min read",
@@ -335,7 +335,7 @@ export const november24BlogPosts: BlogPost[] = [
   {
     "slug": "track-a-customer-billing-contact-change-through-the-portal",
     "title": "Track a customer billing contact change through the portal",
-    "description": "A practical billing contact change control for billing teams, with a named owner, dated evidence, and a reviewable close in the customer portal.",
+    "description": "A practical billing contact change control for the invoice queue, naming the ledger evidence, the deciding reviewer, and the closing record in the customer portal.",
     "category": "Billing operations",
     "publishedAt": "2026-11-24",
     "readTime": "9 min read",
@@ -418,7 +418,7 @@ export const november24BlogPosts: BlogPost[] = [
   {
     "slug": "review-a-consolidated-invoice-against-the-child-accounts",
     "title": "Review a consolidated invoice against the child accounts",
-    "description": "A practical consolidated invoice review control for billing teams, with a named owner, dated evidence, and a reviewable close in the billing system.",
+    "description": "A practical consolidated invoice review control for the invoice queue, naming the ledger evidence, the deciding reviewer, and the closing record in the billing system.",
     "category": "Billing operations",
     "publishedAt": "2026-11-24",
     "readTime": "9 min read",
@@ -501,7 +501,7 @@ export const november24BlogPosts: BlogPost[] = [
   {
     "slug": "check-a-payment-plan-against-the-approval-matrix",
     "title": "Check a payment plan against the approval matrix",
-    "description": "A practical payment plan check control for billing teams, with a named owner, dated evidence, and a reviewable close in the collections file.",
+    "description": "A practical payment plan check control for the invoice queue, naming the ledger evidence, the deciding reviewer, and the closing record in the collections file.",
     "category": "Collections",
     "publishedAt": "2026-11-24",
     "readTime": "9 min read",
@@ -584,7 +584,7 @@ export const november24BlogPosts: BlogPost[] = [
   {
     "slug": "set-a-duplicate-invoice-check-before-the-batch-send",
     "title": "Set a duplicate invoice check before the batch send",
-    "description": "A practical duplicate invoice check control for billing teams, with a named owner, dated evidence, and a reviewable close in the billing system.",
+    "description": "A practical duplicate invoice check control for the invoice queue, naming the ledger evidence, the deciding reviewer, and the closing record in the billing system.",
     "category": "Billing operations",
     "publishedAt": "2026-11-24",
     "readTime": "9 min read",

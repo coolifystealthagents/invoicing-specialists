@@ -7,7 +7,7 @@ export const november24ResearchPosts: ResearchPost[] = [
     "cluster": "Billing research",
     "publishedAt": "2026-11-24",
     "thumbnail": "/thumbnails/november-24/do-retainers-reconcile-to-invoice-drawdowns.webp",
-    "finding": "Retainer reconciliation is comparable only when the team fixes the population, the evidence standard, and the exclusion list before sampling.",
+    "finding": "Retainer reconciliation becomes reviewable only after the billing lead freezes the invoice population, names the evidence standard, and lists every excluded account before sampling.",
     "sections": [
       {
         "heading": "Question and decision scope",
@@ -96,7 +96,7 @@ export const november24ResearchPosts: ResearchPost[] = [
     "cluster": "Billing research",
     "publishedAt": "2026-11-24",
     "thumbnail": "/thumbnails/november-24/are-late-fees-assessed-per-contract-terms.webp",
-    "finding": "Late fee compliance is comparable only when the team fixes the population, the evidence standard, and the exclusion list before sampling.",
+    "finding": "Late fee compliance becomes reviewable only after the billing lead freezes the invoice population, names the evidence standard, and lists every excluded account before sampling.",
     "sections": [
       {
         "heading": "Question and decision scope",
@@ -185,7 +185,7 @@ export const november24ResearchPosts: ResearchPost[] = [
     "cluster": "Billing research",
     "publishedAt": "2026-11-24",
     "thumbnail": "/thumbnails/november-24/do-multi-currency-payments-use-the-settlement-rate.webp",
-    "finding": "Settlement rate accuracy is comparable only when the team fixes the population, the evidence standard, and the exclusion list before sampling.",
+    "finding": "Settlement rate accuracy becomes reviewable only after the billing lead freezes the invoice population, names the evidence standard, and lists every excluded account before sampling.",
     "sections": [
       {
         "heading": "Question and decision scope",
@@ -274,7 +274,7 @@ export const november24ResearchPosts: ResearchPost[] = [
     "cluster": "Billing research",
     "publishedAt": "2026-11-24",
     "thumbnail": "/thumbnails/november-24/are-write-offs-approved-before-aging-close.webp",
-    "finding": "Write-off approval coverage is comparable only when the team fixes the population, the evidence standard, and the exclusion list before sampling.",
+    "finding": "Write-off approval coverage becomes reviewable only after the billing lead freezes the invoice population, names the evidence standard, and lists every excluded account before sampling.",
     "sections": [
       {
         "heading": "Question and decision scope",
@@ -363,7 +363,7 @@ export const november24ResearchPosts: ResearchPost[] = [
     "cluster": "Billing research",
     "publishedAt": "2026-11-24",
     "thumbnail": "/thumbnails/november-24/do-billing-contact-changes-reach-the-next-invoice.webp",
-    "finding": "Contact change propagation is comparable only when the team fixes the population, the evidence standard, and the exclusion list before sampling.",
+    "finding": "Contact change propagation becomes reviewable only after the billing lead freezes the invoice population, names the evidence standard, and lists every excluded account before sampling.",
     "sections": [
       {
         "heading": "Question and decision scope",
@@ -452,7 +452,7 @@ export const november24ResearchPosts: ResearchPost[] = [
     "cluster": "Billing research",
     "publishedAt": "2026-11-24",
     "thumbnail": "/thumbnails/november-24/do-consolidated-invoices-match-child-accounts.webp",
-    "finding": "Consolidation accuracy is comparable only when the team fixes the population, the evidence standard, and the exclusion list before sampling.",
+    "finding": "Consolidation accuracy becomes reviewable only after the billing lead freezes the invoice population, names the evidence standard, and lists every excluded account before sampling.",
     "sections": [
       {
         "heading": "Question and decision scope",
@@ -541,7 +541,7 @@ export const november24ResearchPosts: ResearchPost[] = [
     "cluster": "Billing research",
     "publishedAt": "2026-11-24",
     "thumbnail": "/thumbnails/november-24/are-payment-plans-inside-the-approval-matrix.webp",
-    "finding": "Payment plan compliance is comparable only when the team fixes the population, the evidence standard, and the exclusion list before sampling.",
+    "finding": "Payment plan compliance becomes reviewable only after the billing lead freezes the invoice population, names the evidence standard, and lists every excluded account before sampling.",
     "sections": [
       {
         "heading": "Question and decision scope",
