@@ -13,6 +13,7 @@ const css = read('app/globals.css');
 const contact = read('app/contact-us/page.tsx');
 const contactCss = read('app/contact-us/contact.css');
 const reviewMarquee = read('components/ReviewMarquee.tsx');
+const servicesIndex = read('app/services/page.tsx');
 const service = read('app/services/[slug]/page.tsx');
 const blog = read('app/blog/[slug]/page.tsx');
 const research = read('app/research/[slug]/page.tsx');
@@ -32,6 +33,8 @@ if (fs.existsSync(path.join(root, 'content/stealth-agents-proof.json'))) {
   requireMatch(new Set(proof.reviews?.map((review) => `${review.name}|${review.quote}`)).size === proof.reviews?.length, 'StealthAgents reviews must be unique.');
 }
 requireMatch(contact.includes('StealthAgents reviews') && contact.includes('<ReviewMarquee reviews={proof.reviews} />') && reviewMarquee.includes('className={`review-marquee'), 'Contact Us must visibly identify and render the StealthAgents review marquee.');
+requireMatch(!servicesIndex.includes('Choose by operating need') && !servicesIndex.includes('Six connected services, each with a different job.') && !servicesIndex.includes('Use the collection to separate invoice creation') && !servicesIndex.includes('className="content-wrap index-intro"'), 'Services index must not render the redundant operating-need introduction or reserve its section spacing.');
+requireMatch(servicesIndex.includes('className="service-operating-model"') && servicesIndex.includes('id="service-collection"') && servicesIndex.includes('Complete service collection') && servicesIndex.includes('Select the lane that matches the bottleneck.') && servicesIndex.includes('site.services.map') && servicesIndex.includes('href={`/services/${service.slug}`}'), 'Services index must preserve the operating-model strip, collection heading, service rows, and detail links.');
 requireMatch(!contact.includes('<iframe') && !contact.includes('go.oncehub.com'), 'Contact Us must not embed OnceHub.');
 requireMatch(contact.includes('/brand/stealth-agents-team-bacolod') && contact.includes('/brand/stealth-agents-logo-black.png') && contact.includes('Official team, Bacolod'), 'Contact Us must use the official team photo, official logo, and exact Bacolod plate.');
 requireMatch(/@keyframes\s+reviewMarquee/.test(contactCss) && /prefers-reduced-motion:\s*reduce/.test(contactCss), 'Review marquee must auto-scroll and honor reduced motion.');
