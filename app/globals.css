@@ -77,7 +77,13 @@ h3 {
   margin-right: auto;
 }
 .brand img {
+  width: 38px;
+  height: auto;
+  flex: 0 0 auto;
   object-fit: contain;
+}
+.brand.inverse img {
+  width: 44px;
 }
 .site-header nav {
   display: flex;
@@ -1103,7 +1109,7 @@ footer > div:first-child p {
   line-height: 1.1;
 }
 .parent-brand img {
-  width: 84px;
+  width: 72px;
   height: auto;
   object-fit: contain;
 }
@@ -2228,24 +2234,6 @@ textarea::placeholder {
 .service-workflow li {
   background: #fff;
   padding: 1.8rem;
-  counter-increment: workflow;
-}
-.service-workflow ol {
-  counter-reset: workflow;
-}
-.service-workflow li:before {
-  content: "0" counter(workflow);
-  display: block;
-  margin-bottom: 2rem;
-  color: #bb632f;
-  font-family: var(--display);
-  font-size: 1.25rem;
-}
-.service-workflow li span {
-  display: block;
-  font-family: var(--display);
-  font-size: 1.55rem;
-  line-height: 1.1;
 }
 .service-workflow li p {
   font-size: 0.9rem;
@@ -3018,5 +3006,174 @@ textarea::placeholder {
   .home.design-press .hero h1 {
     font-size: clamp(2.75rem, 11vw, 3.2rem);
     line-height: 1.02;
+  }
+}
+
+/* Keep service and article content centered instead of stranded in a narrow rail. */
+.service-detail {
+  width: min(100%, 1360px);
+  max-width: none;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 5vw, 5rem);
+}
+.service-overview-grid,
+.service-detail-grid,
+.service-workflow,
+.service-quality,
+.service-starting-scenarios,
+.service-detail-faq,
+.service-related,
+.service-detail .service-final-cta {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+}
+.article-layout {
+  width: min(100%, 1360px);
+  max-width: 1360px;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 4rem);
+  grid-template-columns: minmax(0, 800px) minmax(260px, 300px);
+  gap: clamp(1.5rem, 3.2vw, 3rem);
+  justify-content: center;
+}
+.article-layout > div:first-child {
+  width: 100%;
+}
+.article-prose {
+  max-width: 74ch;
+}
+@media (max-width: 1050px) {
+  .article-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(240px, 280px);
+    gap: clamp(1.25rem, 3vw, 2.25rem);
+  }
+}
+@media (max-width: 900px) {
+  .article-layout {
+    width: 100%;
+    max-width: 880px;
+    grid-template-columns: minmax(0, 1fr);
+    padding-inline: 5vw;
+  }
+}
+
+/* Pair human process photography with the explanation it supports. */
+.home .method {
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: clamp(2rem, 5vw, 5rem);
+}
+.home .intro-content {
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+}
+.method-visual,
+.services-final-visual {
+  position: relative;
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #d6a071;
+  background: #ead8c7;
+  box-shadow: 12px 12px 0 #bb632f;
+}
+.method-visual {
+  aspect-ratio: 4 / 3;
+}
+.method-visual img,
+.services-final-visual img {
+  object-fit: cover;
+}
+.method-visual figcaption {
+  position: absolute;
+  inset: auto 0.8rem 0.8rem;
+  padding: 0.7rem 0.85rem;
+  border-left: 3px solid #d6a071;
+  background: rgba(25, 21, 19, 0.9);
+  color: #fff;
+  font-size: 0.8rem;
+}
+.services-final-cta {
+  grid-template-columns: minmax(0, 1.05fr) minmax(260px, 0.95fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: center;
+}
+.services-final-copy,
+.method-copy {
+  min-width: 0;
+}
+.services-final-visual {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+}
+@media (max-width: 900px) {
+  .home .method,
+  .services-final-cta {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .services-final-visual {
+    aspect-ratio: 4 / 3;
+    box-shadow: 7px 7px 0 #bb632f;
+  }
+}
+@media (min-width: 901px) {
+  .home .hero-visual {
+    height: clamp(22rem, 31vw, 34rem);
+    min-height: 0;
+    aspect-ratio: auto;
+  }
+}
+@media (max-width: 600px) {
+  .home .intro-content {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Workflow icons replace ornamental sequence numbers without changing list order. */
+.service-workflow ol {
+  counter-reset: none;
+  list-style: none;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.service-workflow li {
+  counter-increment: none;
+  display: grid;
+  grid-template-columns: 2.7rem minmax(0, 1fr);
+  align-content: start;
+  gap: 0.65rem 0.9rem;
+}
+.service-workflow li::before {
+  content: none;
+  display: none;
+}
+.workflow-step-icon {
+  grid-row: 1 / 3;
+  display: grid;
+  width: 2.7rem;
+  height: 2.7rem;
+  place-items: center;
+  border: 1px solid #bb632f;
+  border-radius: 50%;
+  background: #f1d6a8;
+  color: #6f3218;
+}
+.service-workflow li .workflow-step-icon svg {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+.service-workflow li .workflow-step-title {
+  align-self: center;
+  font-family: var(--display);
+  font-size: 1.35rem;
+  line-height: 1.15;
+}
+.service-workflow li p {
+  grid-column: 2;
+  margin: 0;
+}
+@media (max-width: 900px) {
+  .service-workflow ol {
+    grid-template-columns: minmax(0, 1fr);
   }
 }

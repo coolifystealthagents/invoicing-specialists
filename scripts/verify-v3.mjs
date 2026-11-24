@@ -52,12 +52,40 @@ const siteConfig = read('lib/site.ts');
 requireMatch(siteConfig.includes('"heroImage": "/editorial/invoicing-specialists-hero.webp"') && fs.existsSync(path.join(root, 'public/editorial/invoicing-specialists-hero.webp')), 'The homepage hero must use the optimized local WebP invoice image.');
 const imageManifest = JSON.parse(read('content/site-optimization-assets.json'));
 const homepageHero = imageManifest.assets.find((asset) => asset.path === '/editorial/invoicing-specialists-hero.webp');
-requireMatch(homepageHero?.sourcePage === 'https://www.pexels.com/photo/a-person-examining-documents-8296970/' && homepageHero?.license === 'Pexels License', 'The homepage stock image must retain its source and license record.');
+requireMatch(homepageHero?.sourcePage === 'https://www.pexels.com/photo/a-woman-working-in-the-office-8297080/' && homepageHero?.license === 'Pexels License', 'The homepage stock image must retain its source and license record.');
 requireMatch(layout.includes('images: [site.heroImage]') && read('app/blog/[slug]/page.tsx').includes('images: post.thumbnail ? [post.thumbnail] : [site.heroImage]') && read('app/research/[slug]/page.tsx').includes('images: post.thumbnail ? [post.thumbnail] : [site.heroImage]'), 'Homepage and fallback social images must use the current hero asset.');
 requireMatch(/@media\s*\(max-width:\s*900px\)\s*\{\s*\.home\.design-press \.hero\s*\{\s*grid-template-columns:\s*minmax\(0,\s*1fr\);/s.test(css), 'The press homepage hero must stack its copy and image at tablet and mobile widths.');
-requireMatch(contact.includes('/editorial/invoicing-workflow-hero.jpg') && contact.includes('width={1672} height={941}'), 'Contact imagery must use the sharp landscape source at its native aspect ratio.');
+requireMatch(css.includes('height: clamp(22rem, 31vw, 34rem)') && css.includes('aspect-ratio: auto'), 'The desktop homepage hero must reserve a stable photo height for its fill image.');
+requireMatch(contact.includes('/editorial/invoicing-contact-support.webp') && contact.includes('fill preload'), 'Contact imagery must use a responsive local professional photograph.');
 requireMatch(blog.includes('className="article-heading"') && css.includes('.article-hero h1'), 'Blog detail titles must use responsive heading typography.');
 requireMatch(!/0\{index\s*\+\s*1\}/.test(contact), 'Decorative zero-padded process labels must be removed from Contact Us.');
+const marketing = read('components/Marketing.tsx');
+requireMatch(marketing.includes('className="method-visual"') && marketing.indexOf('className="method-copy"') < marketing.indexOf('className="method-visual"'), 'The Define Delegate Improve text must precede its supporting image in the shared section grid.');
+requireMatch(marketing.includes('/editorial/home/billing-capacity.webp') && marketing.includes('/editorial/home/delegation-workflow.webp') && marketing.includes('/editorial/home/invoicing-support-planning.webp'), 'Homepage editorial sections must use distinct professional photographs.');
+requireMatch(read('app/services/page.tsx').includes('className="services-final-visual"') && read('app/services/page.tsx').includes('/editorial/services/role-handoff.webp'), 'The recurring invoicing handoff call to action must include a responsive supporting photograph.');
+requireMatch(service.includes('workflow-step-icon') && service.includes('SourceRecordsIcon') && service.includes('PreparationIcon') && service.includes('AccountableReviewIcon') && !css.includes('content: "0" counter(workflow)'), 'Individual service workflows must use meaningful icons instead of decorative numbers.');
+requireMatch(css.includes('width: min(100%, 1360px)') && css.includes('minmax(0, 800px) minmax(260px, 300px)') && css.includes('justify-content: center'), 'Individual service and article reading layouts must be centered and use the available desktop width.');
+requireMatch(css.includes('grid-template-columns: minmax(0, 1fr);\n    padding-inline: 5vw;'), 'Article layouts must collapse cleanly at tablet and mobile sizes.');
+const photographicPaths = [
+  '/editorial/invoicing-specialists-hero.webp',
+  '/editorial/home/billing-capacity.webp',
+  '/editorial/home/delegation-workflow.webp',
+  '/editorial/home/invoicing-support-planning.webp',
+  '/editorial/services-invoicing-workflow-hero.webp',
+  '/editorial/services/role-handoff.webp',
+  '/editorial/invoicing-contact-support.webp',
+  '/editorial/services/invoice-draft-preparation.webp',
+  '/editorial/services/billing-schedule-support.webp',
+  '/editorial/services/supporting-documentation.webp',
+  '/editorial/services/invoice-quality-review.webp',
+  '/editorial/services/customer-billing-records.webp',
+  '/editorial/services/billing-status-reporting.webp',
+];
+const photographicEntries = photographicPaths.map((assetPath) => imageManifest.assets.find((asset) => asset.path === assetPath));
+requireMatch(photographicEntries.every((asset, index) => asset?.license === 'Pexels License' && asset?.sourcePage?.includes('pexels.com/photo/') && fs.existsSync(path.join(root, `public${photographicPaths[index]}`))), 'Every replaced or added professional photo must exist locally with its Pexels source and license recorded.');
+requireMatch(new Set(photographicEntries.map((asset) => asset?.sourcePage)).size === photographicEntries.length, 'Each new site visual must use a distinct photo.');
+requireMatch(contactCss.includes('width: min(100%, 480px)') && contactCss.includes('aspect-ratio: 953 / 540') && css.includes('width: 72px') && contactCss.includes('width: 104px'), 'First-party StealthAgents branding must keep its original ratio and avoid upscaling low-resolution assets.');
+requireMatch(contactCss.includes('grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr)') && contactCss.includes('.contact-page .parent-proof > *'), 'The official team and proof panel must remain shrinkable within the desktop grid.');
 requireMatch(proxy.includes("const APEX_HOST = 'invoicingspecialists.com'") && proxy.includes("const WWW_HOST = 'www.invoicingspecialists.com'") && proxy.includes("request.headers.get('host')") && !proxy.includes("request.headers.get('x-forwarded-host')"), 'Canonical redirects must use the direct Host header and an exact production-host allowlist.');
 requireMatch(proxy.includes("request.headers.get('cf-visitor')") && proxy.includes("request.headers.get('x-forwarded-proto')"), 'Canonical redirects must prefer Cloudflare visitor scheme with a forwarded-protocol fallback.');
 requireMatch(proxy.includes('destination.pathname = request.nextUrl.pathname') && proxy.includes('destination.search = request.nextUrl.search') && proxy.includes('NextResponse.redirect(destination, 308)'), 'Canonical redirects must preserve path and query with a permanent fixed-origin redirect.');

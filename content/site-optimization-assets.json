@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-06",
-  "generator": "OpenAI built-in image generation; third-party stock sources are recorded per asset",
-  "scope": "Invoicing Specialists editorial and service heroes",
+  "generatedAt": "2026-11-24",
+  "generator": "OpenAI-generated legacy editorial assets and Pexels professional photography; source recorded per asset",
+  "scope": "Invoicing homepage, service, contact, and editorial imagery",
   "assets": [
     {
       "path": "/editorial/invoicing-workflow-hero.jpg",
@@ -20,70 +20,134 @@
       "promptSummary": "Premium natural editorial photograph of billing trend and receivables analysis materials, no people, logos, client information, readable text, screens, or claim-bearing data."
     },
     {
-      "path": "/editorial/services-invoicing-workflow-hero.jpg",
-      "source": "/Users/bohoseventy/.codex/generated_images/01a1a233-c8c4-7f61-815a-ae5ea3256737/exec-bc820b9b-9471-462a-b2f1-36b67dff2199.png",
-      "dimensions": "1672x941",
-      "use": "/services hero",
-      "alt": "Approved invoice source records, a review checklist, and an organized billing packet arranged as a controlled workflow",
-      "promptSummary": "Professional editorial photograph of an approved-record-to-review workflow, with no people, logos, client data, readable values, screens, or claims."
+      "path": "/editorial/services-invoicing-workflow-hero.webp",
+      "source": "https://images.pexels.com/photos/7688191/pexels-photo-7688191.jpeg?auto=compress&cs=tinysrgb&w=1800&fm=webp",
+      "sourcePage": "https://www.pexels.com/photo/persons-pointing-at-the-numbers-on-the-invoice-7688191/",
+      "creator": "Kindel Media",
+      "license": "Pexels License",
+      "dimensions": "1800x1350",
+      "use": "Services index hero",
+      "alt": "Colleagues point to invoice details while reviewing a billing document"
     },
     {
-      "path": "/editorial/services/invoice-draft-preparation.jpg",
-      "source": "/Users/bohoseventy/.codex/generated_images/01a1a233-c8c4-7f61-815a-ae5ea3256737/exec-13585401-5c93-487a-9ee7-9b6722ecf1da.png",
-      "dimensions": "1672x941",
-      "use": "/services/invoice-draft-preparation hero",
-      "alt": "Approved invoice source records, a prepared draft, and a completed review checklist",
-      "promptSummary": "Editorial finance-operations photograph of source records moving into a prepared draft and review checklist."
+      "path": "/editorial/services/invoice-draft-preparation.webp",
+      "source": "https://images.pexels.com/photos/8297474/pexels-photo-8297474.jpeg?auto=compress&cs=tinysrgb&w=1800&fm=webp",
+      "sourcePage": "https://www.pexels.com/photo/colleagues-in-white-long-sleeve-shirts-sitting-and-reading-a-financial-report-on-a-conference-room-8297474/",
+      "creator": "Mikhail Nilov",
+      "license": "Pexels License",
+      "dimensions": "1800x1013",
+      "use": "Invoice draft preparation service hero",
+      "alt": "Finance colleagues review a billing report together at a desk"
     },
     {
-      "path": "/editorial/services/billing-schedule-support.jpg",
-      "source": "/Users/bohoseventy/.codex/generated_images/01a1a233-c8c4-7f61-815a-ae5ea3256737/exec-3a43d045-18d6-49d7-937d-414dd04c34cc.png",
-      "dimensions": "1672x941",
-      "use": "/services/billing-schedule-support hero",
-      "alt": "Billing calendar, milestone timeline, and organized invoice schedule queue",
-      "promptSummary": "Editorial finance-operations photograph of a billing calendar, milestone timeline, and forward queue."
+      "path": "/editorial/services/billing-schedule-support.webp",
+      "source": "https://images.pexels.com/photos/8297074/pexels-photo-8297074.jpeg?auto=compress&cs=tinysrgb&w=1800&fm=webp",
+      "sourcePage": "https://www.pexels.com/photo/woman-holding-a-black-pen-using-a-black-calculator-8297074/",
+      "creator": "Mikhail Nilov",
+      "license": "Pexels License",
+      "dimensions": "1800x1200",
+      "use": "Billing schedule support service hero",
+      "alt": "A finance professional checks billing paperwork with a calculator and laptop"
     },
     {
-      "path": "/editorial/services/supporting-documentation.jpg",
-      "source": "/Users/bohoseventy/.codex/generated_images/01a1a233-c8c4-7f61-815a-ae5ea3256737/exec-dc6d856f-0a63-4090-aa0d-c741b0165d76.png",
-      "dimensions": "1672x941",
-      "use": "/services/supporting-documentation hero",
-      "alt": "Indexed supporting records assembled with a billing evidence checklist",
-      "promptSummary": "Editorial finance-operations photograph of indexed evidence assembled into a complete support packet."
+      "path": "/editorial/services/supporting-documentation.webp",
+      "source": "https://images.pexels.com/photos/8297478/pexels-photo-8297478.jpeg?auto=compress&cs=tinysrgb&w=1800&fm=webp",
+      "sourcePage": "https://www.pexels.com/photo/colleagues-standing-in-white-long-sleeve-shirts-discussing-and-reading-a-financial-report-8297478/",
+      "creator": "Mikhail Nilov",
+      "license": "Pexels License",
+      "dimensions": "1800x1200",
+      "use": "Supporting documentation service hero",
+      "alt": "Colleagues discuss and review supporting documents in a modern office"
     },
     {
-      "path": "/editorial/services/invoice-quality-review.jpg",
-      "source": "/Users/bohoseventy/.codex/generated_images/01a1a233-c8c4-7f61-815a-ae5ea3256737/exec-9bb7df44-738f-4b72-8840-37564e932d47.png",
-      "dimensions": "1672x941",
-      "use": "/services/invoice-quality-review hero",
-      "alt": "Invoice packet and quality checklist arranged for a controlled preapproval review",
-      "promptSummary": "Editorial finance-operations photograph of an invoice packet, checklist, and documented exception review."
+      "path": "/editorial/services/invoice-quality-review.webp",
+      "source": "https://images.pexels.com/photos/5918207/pexels-photo-5918207.jpeg?auto=compress&cs=tinysrgb&w=1800&fm=webp",
+      "sourcePage": "https://www.pexels.com/photo/man-and-woman-looking-at-document-5918207/",
+      "creator": "Jack Sparrow",
+      "license": "Pexels License",
+      "dimensions": "1800x1200",
+      "use": "Invoice quality review service hero",
+      "alt": "Two colleagues review a financial report together during a meeting"
     },
     {
-      "path": "/editorial/services/customer-billing-records.jpg",
-      "source": "/Users/bohoseventy/.codex/generated_images/01a1a233-c8c4-7f61-815a-ae5ea3256737/exec-a857e4a6-27e3-4f54-9fe3-63eb1769dfbc.png",
-      "dimensions": "1672x941",
-      "use": "/services/customer-billing-records hero",
-      "alt": "Customer billing change records prepared for authorization and provenance review",
-      "promptSummary": "Editorial finance-operations photograph of before-and-after record changes and authorization evidence."
+      "path": "/editorial/services/customer-billing-records.webp",
+      "source": "https://images.pexels.com/photos/6694532/pexels-photo-6694532.jpeg?auto=compress&cs=tinysrgb&w=1800&fm=webp",
+      "sourcePage": "https://www.pexels.com/photo/a-businesswoman-looking-at-documents-on-her-desk-6694532/",
+      "creator": "Tima Miroshnichenko",
+      "license": "Pexels License",
+      "dimensions": "1800x1201",
+      "use": "Customer billing records service hero",
+      "alt": "A businesswoman reviews customer and billing documents at her office desk"
     },
     {
-      "path": "/editorial/services/billing-status-reporting.jpg",
-      "source": "/Users/bohoseventy/.codex/generated_images/01a1a233-c8c4-7f61-815a-ae5ea3256737/exec-ce6d7736-f6b4-4da2-ae37-19e63364858f.png",
-      "dimensions": "1672x941",
-      "use": "/services/billing-status-reporting hero",
-      "alt": "Billing queue summaries and exception records arranged for an operational status review",
-      "promptSummary": "Editorial finance-operations photograph of queue summaries, exception records, and source evidence."
+      "path": "/editorial/services/billing-status-reporting.webp",
+      "source": "https://images.pexels.com/photos/7693683/pexels-photo-7693683.jpeg?auto=compress&cs=tinysrgb&w=1800&fm=webp",
+      "sourcePage": "https://www.pexels.com/photo/using-laptop-in-a-business-meeting-7693683/",
+      "creator": "Yan Krukau",
+      "license": "Pexels License",
+      "dimensions": "1800x1200",
+      "use": "Billing status reporting service hero",
+      "alt": "Colleagues review financial data on a laptop during an office meeting"
     },
     {
       "path": "/editorial/invoicing-specialists-hero.webp",
-      "source": "https://images.pexels.com/photos/8296970/pexels-photo-8296970.jpeg?auto=compress&cs=tinysrgb&w=1800",
-      "sourcePage": "https://www.pexels.com/photo/a-person-examining-documents-8296970/",
+      "source": "https://images.pexels.com/photos/8297080/pexels-photo-8297080.jpeg?auto=compress&cs=tinysrgb&w=1800&fm=webp",
+      "sourcePage": "https://www.pexels.com/photo/a-woman-working-in-the-office-8297080/",
       "creator": "Mikhail Nilov",
       "license": "Pexels License",
-      "dimensions": "1200x1050",
+      "dimensions": "1800x1200",
       "use": "Homepage hero and fallback social image",
-      "alt": "A finance professional checks printed billing paperwork with a calculator and pen"
+      "alt": "A finance professional checks billing paperwork beside a laptop in a bright office"
+    },
+    {
+      "path": "/editorial/home/billing-capacity.webp",
+      "source": "https://images.pexels.com/photos/6779716/pexels-photo-6779716.jpeg?auto=compress&cs=tinysrgb&w=1800&fm=webp",
+      "sourcePage": "https://www.pexels.com/photo/businessman-person-woman-space-6779716/",
+      "creator": "Artem Podrez",
+      "license": "Pexels License",
+      "dimensions": "1800x1200",
+      "use": "Homepage billing capacity section",
+      "alt": "Two finance colleagues collaborate over financial planning documents in a modern office"
+    },
+    {
+      "path": "/editorial/home/delegation-workflow.webp",
+      "source": "https://images.pexels.com/photos/7688080/pexels-photo-7688080.jpeg?auto=compress&cs=tinysrgb&w=1800&fm=webp",
+      "sourcePage": "https://www.pexels.com/photo/a-man-and-a-woman-having-a-conversation-while-looking-at-the-laptop-7688080/",
+      "creator": "Kindel Media",
+      "license": "Pexels License",
+      "dimensions": "1800x1350",
+      "use": "Homepage Define Delegate Improve section",
+      "alt": "Colleagues coordinate a business task over a laptop and documents"
+    },
+    {
+      "path": "/editorial/home/invoicing-support-planning.webp",
+      "source": "https://images.pexels.com/photos/8353815/pexels-photo-8353815.jpeg?auto=compress&cs=tinysrgb&w=1800&fm=webp",
+      "sourcePage": "https://www.pexels.com/photo/men-having-a-discussion-at-the-office-8353815/",
+      "creator": "Kampus Production",
+      "license": "Pexels License",
+      "dimensions": "1800x1202",
+      "use": "Homepage role-planning call to action",
+      "alt": "Finance colleagues discuss a report and plan next steps at an office table"
+    },
+    {
+      "path": "/editorial/services/role-handoff.webp",
+      "source": "https://images.pexels.com/photos/8297490/pexels-photo-8297490.jpeg?auto=compress&cs=tinysrgb&w=1800&fm=webp",
+      "sourcePage": "https://www.pexels.com/photo/coworkers-reading-documents-together-8297490/",
+      "creator": "Mikhail Nilov",
+      "license": "Pexels License",
+      "dimensions": "1800x1200",
+      "use": "Services index recurring invoicing handoff call to action",
+      "alt": "Two finance colleagues review business documents together at an office desk"
+    },
+    {
+      "path": "/editorial/invoicing-contact-support.webp",
+      "source": "https://images.pexels.com/photos/7821671/pexels-photo-7821671.jpeg?auto=compress&cs=tinysrgb&w=1800&fm=webp",
+      "sourcePage": "https://www.pexels.com/photo/an-agent-showing-documents-to-his-client-7821671/",
+      "creator": "RDNE Stock project",
+      "license": "Pexels License",
+      "dimensions": "1800x1200",
+      "use": "Contact Us hero",
+      "alt": "A business adviser and client discuss paperwork in a modern office"
     }
   ]
 }

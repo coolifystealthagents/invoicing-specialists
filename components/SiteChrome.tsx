@@ -6,7 +6,7 @@ import { nav } from '@/lib/content';
 function ParentBrand({ inverse = false }: { inverse?: boolean }) {
   return <a className={`parent-brand${inverse ? ' inverse' : ''}`} href="https://stealthagents.com/" rel="noopener noreferrer">
     <span>Powered by StealthAgents</span>
-    <Image src="/brand/stealth-agents-logo-black.png" alt="Stealth Agents" width={112} height={38} />
+    <Image src="/brand/stealth-agents-logo-black.png" alt="Stealth Agents" width={72} height={24} sizes="72px" />
   </a>;
 }
 

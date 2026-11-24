@@ -103,10 +103,10 @@ export default function ServicesPage() {
         </div>
         <figure className="services-index-visual">
           <Image
-            src="/editorial/services-invoicing-workflow-hero.jpg"
-            alt="Approved invoice source records, a review checklist, and an organized billing packet arranged as a controlled workflow"
+            src="/editorial/services-invoicing-workflow-hero.webp"
+            alt="Two finance colleagues review invoices together at a modern office desk"
             fill
-            priority
+            preload
             sizes="(max-width: 900px) 100vw, 48vw"
           />
           <figcaption>
@@ -286,15 +286,25 @@ export default function ServicesPage() {
       </section>
 
       <section className="closing services-final-cta">
-        <p className="eyebrow">Start with a real queue</p>
-        <h2>Turn one recurring invoicing handoff into a clear role.</h2>
-        <p>
-          Bring the trigger, sources, expected output, reviewer, and common
-          exceptions. We will use them to identify the best starting service.
-        </p>
-        <Link className="button primary" href="/contact-us">
-          Plan a free consultation
-        </Link>
+        <div className="services-final-copy">
+          <p className="eyebrow">Start with a real queue</p>
+          <h2>Turn one recurring invoicing handoff into a clear role.</h2>
+          <p>
+            Bring the trigger, sources, expected output, reviewer, and common
+            exceptions. We will use them to identify the best starting service.
+          </p>
+          <Link className="button primary" href="/contact-us">
+            Plan a free consultation
+          </Link>
+        </div>
+        <figure className="services-final-visual">
+          <Image
+            src="/editorial/services/role-handoff.webp"
+            alt="Coworkers share a business document while planning the next action"
+            fill
+            sizes="(max-width: 900px) 90vw, 38vw"
+          />
+        </figure>
       </section>
     </main>
   );
