@@ -3150,7 +3150,7 @@ textarea::placeholder {
 .service-workflow ol {
   counter-reset: none;
   list-style: none;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 .service-workflow li {
   counter-increment: none;
@@ -3191,5 +3191,147 @@ textarea::placeholder {
 @media (max-width: 900px) {
   .service-workflow ol {
     grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Shared, responsive detail-page navigation and workflow depth. */
+.service-breadcrumbs {
+  width: min(100%, 1440px);
+  margin: 0 auto;
+  padding: 0.9rem clamp(1.25rem, 4vw, 4rem);
+}
+.service-breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #5e4e43;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+.service-breadcrumbs li + li::before {
+  content: "/";
+  margin-right: 0.45rem;
+  color: #9b8877;
+}
+.service-breadcrumbs a {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+.service-breadcrumbs [aria-current="page"] {
+  color: #191513;
+  font-weight: 750;
+}
+.service-onboarding,
+.service-workflow-example,
+.service-responsibilities {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: clamp(2.75rem, 5vw, 5rem) 0;
+  border-top: 1px solid #aa9888;
+}
+.service-onboarding h2,
+.service-workflow-example h2,
+.service-responsibility-card h2 {
+  max-width: 850px;
+  font-size: clamp(2.2rem, 3.6vw, 4rem);
+  line-height: 1.08;
+  text-wrap: balance;
+}
+.service-onboarding > p:not(.eyebrow),
+.service-workflow-example > p:not(.eyebrow),
+.service-related > p:not(.eyebrow) {
+  max-width: 74ch;
+  line-height: 1.7;
+}
+.service-onboarding-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem 1rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.service-onboarding-list li {
+  min-width: 0;
+  padding: 1rem 1.1rem;
+  border-left: 3px solid #bb632f;
+  background: #fff;
+  line-height: 1.6;
+}
+.service-workflow-example {
+  padding: clamp(1.75rem, 4vw, 3rem);
+  border: 0;
+  border-left: 5px solid #bb632f;
+  background: #f1d6a8;
+}
+.service-workflow-example h2 {
+  margin-bottom: 1rem;
+}
+.service-workflow-example > p:not(.eyebrow) {
+  margin-bottom: 0;
+}
+.service-workflow-example .service-example-note {
+  margin-top: 1rem;
+  font-size: 0.84rem;
+  font-style: italic;
+}
+.service-responsibilities {
+  border-top: 0;
+}
+.service-responsibility-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1rem, 3vw, 2rem);
+}
+.service-responsibility-card {
+  min-width: 0;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border-top: 4px solid #bb632f;
+  background: #fff;
+}
+.service-responsibility-card h2 {
+  font-size: clamp(1.8rem, 2.6vw, 2.75rem);
+}
+.service-responsibility-card ul {
+  margin-bottom: 0;
+  padding-left: 1.2rem;
+}
+.service-responsibility-card li {
+  margin: 0.7rem 0;
+  line-height: 1.6;
+}
+.service-boundary-note {
+  margin: 1.25rem 0 0;
+  padding: 1.1rem 1.25rem;
+  border-left: 4px solid #d6a071;
+  background: #191513;
+  color: #fff;
+  line-height: 1.65;
+}
+.service-boundary-note strong {
+  color: #f1d6a8;
+}
+@media (max-width: 1050px) {
+  .service-workflow ol {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .service-onboarding,
+  .service-responsibilities {
+    padding-block: 3rem;
+  }
+  .service-onboarding-list,
+  .service-responsibility-grid,
+  .service-workflow ol {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .service-workflow-example {
+    padding: 1.4rem;
   }
 }
