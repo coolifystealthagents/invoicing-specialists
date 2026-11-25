@@ -165,9 +165,18 @@ export default function ServicesPage() {
       >
         <div className="service-collection-heading">
           <p className="eyebrow">Complete service collection</p>
-          <h2 id="service-collection-title">
-            Select the lane that matches the bottleneck.
-          </h2>
+          <div className="service-collection-copy">
+            <h2 id="service-collection-title">
+              Select the lane that matches the bottleneck.
+            </h2>
+            <p className="service-collection-intro">
+              Start with the part of billing that slows your team down, whether
+              that’s preparing invoice drafts, tracking billing dates, or
+              gathering supporting documents. Use the ‘Best for’ and ‘Decision
+              boundary’ notes below to see what each specialist handles and
+              where your finance team takes over.
+            </p>
+          </div>
         </div>
         <div className="service-collection-list">
           {site.services.map((service) => {
