@@ -3068,6 +3068,7 @@ textarea::placeholder {
   flex-direction: column;
   align-items: center;
   gap: clamp(1.75rem, 3vw, 3rem);
+  padding-block: clamp(4rem, 5vw, 5.5rem);
 }
 .home .intro > .intro-label {
   width: min(100%, 56rem);
@@ -3079,6 +3080,7 @@ textarea::placeholder {
   align-items: center;
   gap: clamp(2rem, 5vw, 4rem);
   width: min(100%, 72rem);
+  max-width: 72rem;
   margin-inline: auto;
 }
 .home .intro > .intro-content > .home-support-image {
@@ -3096,15 +3098,153 @@ textarea::placeholder {
 .home .intro > .intro-content > .intro-copy p {
   margin-inline: 0;
 }
+.home .service-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.home .service-card {
+  min-height: 0;
+  gap: 0.45rem;
+  padding: clamp(1.1rem, 1.5vw, 1.5rem);
+}
+.home .service-card h3 {
+  margin: 0;
+  font-size: clamp(1.25rem, 1.55vw, 1.65rem);
+  line-height: 1.08;
+  text-wrap: balance;
+}
+.home .service-card p {
+  margin: 0.4rem 0 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.home .service-card .service-card-detail {
+  margin-top: 0.45rem;
+  padding-top: 0.55rem;
+  border-top: 1px solid color-mix(in srgb, var(--ink) 18%, transparent);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+.home .service-card .text-link {
+  margin-top: 0.7rem;
+  font-size: 0.84rem;
+}
+.home .invoice-support-flow,
+.home .invoice-starting-points {
+  padding-block: clamp(4rem, 6vw, 6rem);
+}
+.home .invoice-support-flow .section-heading,
+.home .invoice-starting-points .section-heading {
+  max-width: 850px;
+}
+.home .invoice-support-flow .section-heading > p:not(.eyebrow) {
+  max-width: 72ch;
+  line-height: 1.6;
+}
+.home .invoice-support-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  margin: 0;
+  padding: 1px;
+  list-style: none;
+  border: 1px solid #aa9888;
+  background: #aa9888;
+}
+.home .invoice-support-steps li {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  align-content: start;
+  gap: 0.75rem;
+  min-width: 0;
+  padding: clamp(1.1rem, 1.7vw, 1.6rem);
+  background: var(--canvas);
+}
+.home .invoice-support-icon {
+  display: grid;
+  width: 2.6rem;
+  height: 2.6rem;
+  place-items: center;
+  border: 1px solid #bb632f;
+  border-radius: 50%;
+  background: #f1d6a8;
+  color: #6f3218;
+}
+.home .invoice-support-icon svg {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.home .invoice-support-steps strong {
+  font-family: var(--display);
+  font-size: 1.25rem;
+  line-height: 1.12;
+}
+.home .invoice-support-steps p {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+.home .invoice-starting-points {
+  background: color-mix(in srgb, var(--secondary) 10%, var(--canvas));
+}
+.home .invoice-starting-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid color-mix(in srgb, var(--ink) 18%, transparent);
+  background: color-mix(in srgb, var(--ink) 18%, transparent);
+}
+.home .invoice-starting-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  padding: clamp(1.2rem, 2vw, 1.8rem);
+  background: #fff;
+  color: var(--ink);
+}
+.home .invoice-starting-card .eyebrow {
+  margin: 0;
+}
+.home .invoice-starting-card h3 {
+  margin: 0.6rem 0;
+  font-family: var(--display);
+  font-size: clamp(1.5rem, 2.2vw, 2.1rem);
+  line-height: 1.08;
+  text-wrap: balance;
+}
+.home .invoice-starting-card p:not(.eyebrow) {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+.home .invoice-starting-card .text-link {
+  margin-top: auto;
+  padding-top: 1.1rem;
+}
 @media (max-width: 900px) {
   .home .intro > .intro-content {
     gap: clamp(1.25rem, 3vw, 2.25rem);
+  }
+  .home .service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .home .invoice-support-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 @media (max-width: 700px) {
   .home .intro > .intro-content {
     grid-template-columns: minmax(0, 1fr);
     gap: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .home .intro {
+    padding-block: 3rem;
+  }
+  .home .service-grid,
+  .home .invoice-support-steps,
+  .home .invoice-starting-grid {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 .method-visual,
