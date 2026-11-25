@@ -3063,8 +3063,30 @@ textarea::placeholder {
   grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
   gap: clamp(2rem, 5vw, 5rem);
 }
-.home .intro-content {
-  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+.home .intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(1.75rem, 3vw, 3rem);
+}
+.home .intro-label {
+  width: min(100%, 56rem);
+  text-align: center;
+}
+.home .intro > .home-support-image {
+  width: min(100%, 35rem);
+  align-self: center;
+}
+.home .intro-copy {
+  width: min(100%, 48rem);
+  text-align: center;
+}
+.home .intro-copy h2 {
+  max-width: 24ch;
+  margin-inline: auto;
+}
+.home .intro-copy p {
+  margin-inline: auto;
 }
 .method-visual,
 .services-final-visual {
@@ -3124,12 +3146,6 @@ textarea::placeholder {
     aspect-ratio: auto;
   }
 }
-@media (max-width: 600px) {
-  .home .intro-content {
-    grid-template-columns: minmax(0, 1fr);
-  }
-}
-
 /* Workflow icons replace ornamental sequence numbers without changing list order. */
 .service-workflow ol {
   counter-reset: none;
