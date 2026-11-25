@@ -469,7 +469,7 @@
 
 
 .contact-page .parent-proof-image {
-  width: min(100%, 480px);
+  width: min(100%, 560px);
   min-height: 0;
   aspect-ratio: 953 / 540;
   align-self: center;
@@ -491,7 +491,7 @@
 
 @media (max-width: 900px) {
   .contact-page .parent-proof-image {
-    width: min(100%, 480px);
+    width: min(90vw, 560px);
   }
 }
 
