@@ -158,13 +158,6 @@ export default function ServicesPage() {
         </article>
       </section>
 
-      <section className="content-wrap index-intro">
-        <p className="eyebrow">Choose by operating need</p>
-        <div>
-          <h2>Six connected services, each with a different job.</h2>
-        </div>
-      </section>
-
       <section
         id="service-collection"
         className="content-wrap service-collection"
