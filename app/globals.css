@@ -3069,24 +3069,43 @@ textarea::placeholder {
   align-items: center;
   gap: clamp(1.75rem, 3vw, 3rem);
 }
-.home .intro-label {
+.home .intro > .intro-label {
   width: min(100%, 56rem);
   text-align: center;
 }
-.home .intro > .home-support-image {
+.home .intro > .intro-content {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 4rem);
+  width: min(100%, 72rem);
+  margin-inline: auto;
+}
+.home .intro > .intro-content > .home-support-image {
   width: min(100%, 35rem);
-  align-self: center;
+  justify-self: center;
 }
-.home .intro-copy {
-  width: min(100%, 48rem);
-  text-align: center;
+.home .intro > .intro-content > .intro-copy {
+  width: min(100%, 42rem);
+  text-align: left;
 }
-.home .intro-copy h2 {
+.home .intro > .intro-content > .intro-copy h2 {
   max-width: 24ch;
-  margin-inline: auto;
+  margin: 0;
 }
-.home .intro-copy p {
-  margin-inline: auto;
+.home .intro > .intro-content > .intro-copy p {
+  margin-inline: 0;
+}
+@media (max-width: 900px) {
+  .home .intro > .intro-content {
+    gap: clamp(1.25rem, 3vw, 2.25rem);
+  }
+}
+@media (max-width: 700px) {
+  .home .intro > .intro-content {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
 }
 .method-visual,
 .services-final-visual {

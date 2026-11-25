@@ -162,13 +162,6 @@ export default function ServicesPage() {
         <p className="eyebrow">Choose by operating need</p>
         <div>
           <h2>Six connected services, each with a different job.</h2>
-          <p>
-            Use the collection to separate invoice creation from schedule
-            control, evidence handling, quality checks, customer record
-            maintenance, and status reporting. Every route explains its inputs,
-            workflow, outputs, boundaries, quality checks, starting scenarios,
-            and next step.
-          </p>
         </div>
       </section>
 
