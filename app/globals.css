@@ -332,8 +332,8 @@ h3 {
   color: var(--ink);
 }
 .site-footer {
-  background: #0c1928;
-  color: #f7f2ea;
+  background: var(--canvas);
+  color: var(--ink);
 }
 .site-footer-inner {
   width: min(100%, 1360px);
@@ -356,7 +356,7 @@ h3 {
   min-height: 44px;
   align-items: center;
   gap: 0.8rem;
-  color: #fff;
+  color: var(--ink);
   font-family: var(--display), Georgia, serif;
   font-size: clamp(1.25rem, 1.6vw, 1.6rem);
   font-weight: 700;
@@ -370,7 +370,7 @@ h3 {
 }
 .site-footer-powered {
   margin: 1rem 0 0.55rem;
-  color: #f1d6a8;
+  color: #8b421e;
   font-size: 0.72rem;
   font-weight: 850;
   letter-spacing: 0.12em;
@@ -380,7 +380,7 @@ h3 {
 .site-footer-description {
   max-width: 58ch;
   margin: 0;
-  color: #d8e0e8;
+  color: #51463e;
   font-size: 0.92rem;
   line-height: 1.65;
 }
@@ -392,7 +392,7 @@ h3 {
 }
 .site-footer-heading {
   margin: 0 0 0.55rem;
-  color: #f1d6a8;
+  color: #8b421e;
   font-family: var(--body), Arial, sans-serif;
   font-size: 0.75rem;
   font-weight: 850;
@@ -406,18 +406,18 @@ h3 {
   align-items: center;
   padding-block: 0.35rem;
   border-radius: 2px;
-  color: #f3f6fa;
+  color: var(--ink);
   font-size: 0.9rem;
   line-height: 1.4;
   text-decoration: none;
   text-underline-offset: 0.2em;
 }
 .site-footer-link:hover {
-  color: #f1d6a8;
+  color: #8b421e;
   text-decoration: underline;
 }
 .site-footer a:focus-visible {
-  outline: 3px solid #f1d6a8;
+  outline: 3px solid var(--primary);
   outline-offset: 3px;
   border-radius: 2px;
 }
@@ -427,7 +427,8 @@ h3 {
   gap: clamp(2rem, 5vw, 5rem);
   align-items: center;
   padding-block: clamp(2.25rem, 4vw, 3.5rem);
-  border-top: 1px solid rgb(255 255 255 / 24%);
+  border-top: 1px solid #c7b7a6;
+  background: color-mix(in srgb, var(--secondary) 14%, var(--canvas));
 }
 .site-footer-logo-panel {
   display: grid;
@@ -436,6 +437,7 @@ h3 {
   min-height: 84px;
   place-items: center;
   padding: 1.2rem 1.4rem;
+  border-left: 4px solid var(--primary);
   border-radius: 10px;
   background: #fff;
 }
@@ -451,7 +453,7 @@ h3 {
 }
 .site-footer-parent-label {
   margin: 0 0 0.65rem;
-  color: #f1d6a8;
+  color: #8b421e;
   font-family: var(--body), Arial, sans-serif;
   font-size: 0.73rem;
   font-weight: 850;
@@ -462,7 +464,7 @@ h3 {
 .site-footer-parent-description {
   max-width: 76ch;
   margin: 0;
-  color: #d8e0e8;
+  color: #51463e;
   font-size: 0.9rem;
   line-height: 1.65;
 }
@@ -472,7 +474,7 @@ h3 {
   align-items: center;
   gap: 0.35rem;
   margin-top: 0.55rem;
-  color: #fff;
+  color: #8b421e;
   font-size: 0.86rem;
   font-weight: 800;
   text-decoration: underline;
@@ -480,7 +482,7 @@ h3 {
 }
 .site-footer-parent-link:hover,
 .site-footer-domain:hover {
-  color: #f1d6a8;
+  color: #6f3218;
 }
 .site-footer-bottom {
   display: flex;
@@ -488,8 +490,8 @@ h3 {
   justify-content: space-between;
   gap: 1rem;
   padding-top: 0.8rem;
-  border-top: 1px solid rgb(255 255 255 / 24%);
-  color: #d8e0e8;
+  border-top: 1px solid #c7b7a6;
+  color: #51463e;
   font-size: 0.82rem;
   line-height: 1.5;
 }
@@ -500,7 +502,7 @@ h3 {
   display: flex;
   min-height: 44px;
   align-items: center;
-  color: #f3f6fa;
+  color: var(--ink);
   text-decoration: none;
 }
 .signal-strip {
