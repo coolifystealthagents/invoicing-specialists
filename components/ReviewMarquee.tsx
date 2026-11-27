@@ -1,24 +1,13 @@
 'use client';
 
-import { useState } from 'react';
-
 type Review = { name: string; quote: string };
 
 export function ReviewMarquee({ reviews }: { reviews: Review[] }) {
-  const [paused, setPaused] = useState(false);
+  const paused = false;
 
   return <div className="review-marquee-wrap">
     <div className="review-controls">
-      <button
-        className="review-toggle"
-        type="button"
-        aria-pressed={paused}
-        aria-label="Pause automatic review movement"
-        aria-controls="review-marquee"
-        onClick={() => setPaused(value => !value)}
-      >
-        <span aria-hidden="true">{paused ? 'Play reviews' : 'Pause reviews'}</span>
-      </button>
+      
     </div>
     <div id="review-marquee" className={`review-marquee${paused ? ' is-paused' : ''}`} aria-label="StealthAgents reviews">
       <div className="review-track">

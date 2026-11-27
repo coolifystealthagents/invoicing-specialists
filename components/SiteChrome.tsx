@@ -13,7 +13,7 @@ function ParentBrand() {
 export function Header() {
   return <>
     <a className="skip-link" href="#main-content">Skip to content</a>
-    <header className="site-header">
+    <header data-site-header="sticky" className="site-header">
       <Link className="brand" href="/" aria-label={`${site.name} home`}><Image src="/logo.svg" alt="" width={38} height={38} priority /><span>{site.name}</span></Link>
       <nav aria-label="Primary navigation">{nav.map(item => <Link key={item.href} href={item.href}>{item.label}</Link>)}</nav>
       <ParentBrand />
@@ -33,7 +33,7 @@ export function Footer() {
   ];
 
   return (
-    <footer className="site-footer">
+    <footer data-site-footer="true" className="site-footer">
       <div className="site-footer-inner">
         <div className="site-footer-main">
           <div className="site-footer-brand">
@@ -49,7 +49,7 @@ export function Footer() {
             <p className="site-footer-description">{site.heroBody}</p>
           </div>
 
-          <nav
+          <nav data-footer-menu="true"
             className="site-footer-nav site-footer-services"
             aria-labelledby="site-footer-services-title"
           >
@@ -70,7 +70,7 @@ export function Footer() {
             ))}
           </nav>
 
-          <nav
+          <nav data-footer-menu="true"
             className="site-footer-nav site-footer-explore"
             aria-labelledby="site-footer-explore-title"
           >

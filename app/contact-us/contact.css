@@ -101,7 +101,6 @@
   gap: 0.75rem;
   animation: reviewMarquee 80s linear infinite;
 }
-.review-marquee:hover .review-track,
 .review-marquee:focus-within .review-track,
 .review-marquee.is-paused .review-track {
   animation-play-state: paused;
